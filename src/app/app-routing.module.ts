@@ -4,12 +4,12 @@ import { LandingComponent } from './pages/landing/landing.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "landing", pathMatch: "full"},
-  { path: "team", redirectTo: "landing" },
-  { path: "installations", redirectTo: "landing" },
-  { path: "prestations", redirectTo: "landing" },
-  { path: "philo", redirectTo: "landing" },
-  { path: "withus",  redirectTo: "landing" },
-  { path: "contact",  redirectTo: "landing" },
+  { path: "team", component: LandingComponent },
+  { path: "installations", component: LandingComponent },
+  { path: "prestations", component: LandingComponent },
+  { path: "philo", component: LandingComponent },
+  { path: "withus", component: LandingComponent },
+  { path: "contact", component: LandingComponent },
   { path: "landing", component: LandingComponent },
   { path: '**', redirectTo: "landing", pathMatch: "full"}
 ];
