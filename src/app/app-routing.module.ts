@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LandingComponent } from './pages/landing/landing.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "landing", pathMatch: "full"},
@@ -9,7 +10,7 @@ const routes: Routes = [
   { path: "philo", redirectTo: "landing" },
   { path: "withus",  redirectTo: "landing" },
   { path: "contact",  redirectTo: "landing" },
-  // { path: "landing", component: LandingComponent },
+  { path: "landing", component: LandingComponent },
   { path: '**', redirectTo: "landing", pathMatch: "full"}
 ];
 
