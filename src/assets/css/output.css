@@ -492,6 +492,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 95%;
 }
 
+.-top-32 {
+  top: -8rem;
+}
+
+.top-72 {
+  top: 18rem;
+}
+
+.top-32 {
+  top: 8rem;
+}
+
 .z-header {
   z-index: 100;
 }
@@ -656,6 +668,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-5\/20 {
   width: 25%;
+}
+
+.w-1\/3 {
+  width: 33.333333%;
+}
+
+.w-4\/20 {
+  width: 20%;
 }
 
 .origin-tRect {
@@ -823,12 +843,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
+.space-y-12 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
 
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
 .overflow-y-scroll {
@@ -871,6 +901,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(174 198 118 / var(--tw-border-opacity));
 }
 
+.border-darkWhite {
+  --tw-border-opacity: 1;
+  border-color: rgb(219 208 193 / var(--tw-border-opacity));
+}
+
 .bg-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(18 14 1 / var(--tw-bg-opacity));
@@ -891,6 +926,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(55 45 29 / var(--tw-bg-opacity));
 }
 
+.bg-citation-bg\/80 {
+  background-color: rgb(55 45 29 / 0.8);
+}
+
+.bg-light-green\/80 {
+  background-color: rgb(213 227 181 / 0.8);
+}
+
 .bg-wood {
   background-image: url('/assets/imgs/wood.jpg');
 }
@@ -909,6 +952,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-prestas {
   background-image: url('/assets/imgs/prestas/first.jpg');
+}
+
+.bg-left-bg {
+  background-image: url('/assets/imgs/work/left.png');
+}
+
+.bg-center-bg {
+  background-image: url('/assets/imgs/work/center.png');
+}
+
+.bg-right-bg {
+  background-image: url('/assets/imgs/work/right.png');
 }
 
 .from-black {
@@ -964,10 +1019,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1.5rem;
 }
 
-.p-24 {
-  padding: 6rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1011,6 +1062,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-14 {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pt-12 {
@@ -1085,6 +1141,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Playfair Display, serif;
 }
 
+.font-helvetica {
+  font-family: helvetica-w01-bold, helvetica-w02-bold, helvetica-lt-w10-bold, sans-serif;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1128,6 +1188,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .font-normal {
@@ -1186,6 +1251,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(219 208 193 / var(--tw-text-opacity));
 }
 
+.text-citation-bg {
+  --tw-text-opacity: 1;
+  color: rgb(55 45 29 / var(--tw-text-opacity));
+}
+
 .opacity-90 {
   opacity: 0.9;
 }
@@ -1200,6 +1270,25 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .opacity-20 {
   opacity: 0.2;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.drop-shadow-title {
+  --tw-drop-shadow: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.6)) drop-shadow(-1px -1px 1px rgba(0, 0, 0, 0.6));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.drop-shadow-text {
+  --tw-drop-shadow: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.4));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.drop-shadow {
+  --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .duration-500 {

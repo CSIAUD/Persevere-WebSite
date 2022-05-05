@@ -8,7 +8,8 @@ import { HeaderComponent } from './component/header/header.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { TeamComponent } from './pages/team/team.component';
 import { InstallationsComponent } from './pages/installations/installations.component';
-import { WorkComponent } from './pages/prestations/work/work.component';
+import { WorkComponent } from './pages/work/work.component';
+import { PrestationsComponent } from './pages/prestations/prestations.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { WorkComponent } from './pages/prestations/work/work.component';
     LandingComponent,
     TeamComponent,
     InstallationsComponent,
-    WorkComponent
+    WorkComponent,
+    PrestationsComponent
   ],
   imports: [
     BrowserModule,
