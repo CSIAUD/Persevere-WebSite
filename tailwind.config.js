@@ -5,12 +5,14 @@ module.exports = {
   theme: {
     extend: {
       listStyleType: {
-        circle: 'circle'
+        circle: 'circle',
+        base: "'- '"
       },
       backgroundImage: {
         'wood': "url('/assets/imgs/wood.jpg')",
         'entrance': "url('/assets/imgs/entrance.jpg')",
-        'karine': "url('/assets/imgs/karine_cheval.jpg')"
+        'karine': "url('/assets/imgs/karine_cheval.jpg')",
+        'prestas': "url('/assets/imgs/prestas/first.jpg')"
       },
       fontFamily: {
         'oswald': ['Oswald', 'sans-serif'],
@@ -22,6 +24,7 @@ module.exports = {
         'green': "#AEC676",
         'beige': "rgba(175 ,166 ,154, 0.7)",
         'citation-bg': "rgb(55 ,45 ,29)",
+        'darkWhite': "rgb( 219,208,193)",
         'citation-border': "rgb(101 ,86 ,78)"
       },
       spacing:{

@@ -550,6 +550,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 30%;
 }
 
+.mr-3\/20 {
+  margin-right: 15%;
+}
+
 .inline {
   display: inline;
 }
@@ -614,12 +618,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 50%;
 }
 
-.w-10 {
-  width: 2.5rem;
-}
-
 .w-60 {
   width: 15rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-16 {
@@ -648,6 +652,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-15\/20 {
   width: 75%;
+}
+
+.w-5\/20 {
+  width: 25%;
 }
 
 .origin-tRect {
@@ -707,8 +715,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   list-style-type: circle;
 }
 
+.list-base {
+  list-style-type: '- ';
+}
+
 .flex-row {
   flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
 }
 
 .flex-col {
@@ -745,6 +761,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-x-1\/20 {
@@ -819,6 +839,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 4px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-y-2 {
   border-top-width: 2px;
   border-bottom-width: 2px;
@@ -835,6 +859,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-citation-border {
   --tw-border-opacity: 1;
   border-color: rgb(101 86 78 / var(--tw-border-opacity));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-green {
+  --tw-border-opacity: 1;
+  border-color: rgb(174 198 118 / var(--tw-border-opacity));
 }
 
 .bg-dark {
@@ -871,6 +905,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-karine {
   background-image: url('/assets/imgs/karine_cheval.jpg');
+}
+
+.bg-prestas {
+  background-image: url('/assets/imgs/prestas/first.jpg');
 }
 
 .from-black {
@@ -922,6 +960,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2.5rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-24 {
+  padding: 6rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -967,8 +1013,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 3.5rem;
 }
 
-.pt-24 {
-  padding-top: 6rem;
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .pb-12 {
@@ -987,8 +1033,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 6rem;
 }
 
-.pt-12 {
-  padding-top: 3rem;
+.pt-24 {
+  padding-top: 6rem;
 }
 
 .pt-16 {
@@ -1009,6 +1055,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-14 {
   padding-bottom: 3.5rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -1080,11 +1130,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
-}
-
 .font-normal {
   font-weight: 400;
 }
@@ -1117,6 +1162,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2;
 }
 
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1132,9 +1181,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-red-800 {
+.text-darkWhite {
   --tw-text-opacity: 1;
-  color: rgb(153 27 27 / var(--tw-text-opacity));
+  color: rgb(219 208 193 / var(--tw-text-opacity));
 }
 
 .opacity-90 {
