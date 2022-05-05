@@ -2,13 +2,19 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { InstallationsComponent } from './pages/installations/installations.component';
 import { LandingComponent } from './pages/landing/landing.component';
+import { WorkComponent } from './pages/prestations/work/work.component';
 import { TeamComponent } from './pages/team/team.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "landing", pathMatch: "full"},
+  {
+    path: "prestations",
+    children: [
+      {path: "work", component: WorkComponent}
+    ]
+  },
   { path: "team", component: TeamComponent },
   { path: "installations", component: InstallationsComponent },
-  { path: "prestations", component: LandingComponent },
   { path: "philo", component: LandingComponent },
   { path: "withus", component: LandingComponent },
   { path: "contact", component: LandingComponent },
