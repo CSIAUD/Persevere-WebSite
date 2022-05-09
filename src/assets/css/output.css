@@ -566,6 +566,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 15%;
 }
 
+.mb-96 {
+  margin-bottom: 24rem;
+}
+
 .inline {
   display: inline;
 }
@@ -676,6 +680,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-4\/20 {
   width: 20%;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-9\/20 {
+  width: 45%;
 }
 
 .origin-tRect {
@@ -843,14 +855,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
-.space-y-12 > :not([hidden]) ~ :not([hidden]) {
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-9 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
+}
+
+.space-y-7 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
 .overflow-x-hidden {
@@ -886,7 +914,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgba(175 ,166 ,154, 0.7);
 }
 
-.border-citation-border {
+.border-maroon {
   --tw-border-opacity: 1;
   border-color: rgb(101 86 78 / var(--tw-border-opacity));
 }
@@ -966,6 +994,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('/assets/imgs/work/right.png');
 }
 
+.bg-pension1 {
+  background-image: url('/assets/imgs/work/pension1.jpg');
+}
+
+.bg-pension2 {
+  background-image: url('/assets/imgs/work/pension2.jpg');
+}
+
 .from-black {
   --tw-gradient-from: #000;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(0 0 0 / 0));
@@ -1019,6 +1055,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1.5rem;
 }
 
+.p-9 {
+  padding: 2.25rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1067,6 +1107,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .pt-12 {
@@ -1123,6 +1173,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-right {
   text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .font-sans {
@@ -1195,6 +1249,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-normal {
   font-weight: 400;
 }
@@ -1256,6 +1315,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(55 45 29 / var(--tw-text-opacity));
 }
 
+.text-light-green {
+  --tw-text-opacity: 1;
+  color: rgb(213 227 181 / var(--tw-text-opacity));
+}
+
 .opacity-90 {
   opacity: 0.9;
 }
@@ -1286,11 +1350,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.drop-shadow {
-  --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .duration-500 {
   transition-duration: 500ms;
 }
@@ -1305,7 +1364,7 @@ html{
   --green: #AEC676;
   --beige: rgba(175 ,166 ,154, 0.5);
   --citation-bg: rgb(55 ,45 ,29);
-  --citation-border: rgb(101 ,86 ,78);
+  --maroon: rgb(101 ,86 ,78);
   --citation-sides: rgb(146 ,132 ,112);
   --citation-under: rgb(17 ,13 ,1);
 }

@@ -15,7 +15,9 @@ module.exports = {
         'prestas': "url('/assets/imgs/prestas/first.jpg')",
         'left-bg': "url('/assets/imgs/work/left.png')",
         'center-bg': "url('/assets/imgs/work/center.png')",
-        'right-bg': "url('/assets/imgs/work/right.png')"
+        'right-bg': "url('/assets/imgs/work/right.png')",
+        'pension1': "url('/assets/imgs/work/pension1.jpg')",
+        'pension2': "url('/assets/imgs/work/pension2.jpg')"
       },
       fontFamily: {
         'oswald': ['Oswald', 'sans-serif'],
@@ -24,13 +26,12 @@ module.exports = {
       },
       colors: {
         'dark': "rgb(18 ,14 ,1)",
+        'citation-bg': "rgb(55 ,45 ,29)",
         'maroon': "rgb(101 ,86 ,78)",
         'green': "rgb(174 ,198 ,118)",
-        'light-green': "rgb(213 ,227 ,181)",
         'beige': "rgba(175 ,166 ,154, 0.7)",
-        'citation-bg': "rgb(55 ,45 ,29)",
-        'darkWhite': "rgb( 219,208,193)",
-        'citation-border': "rgb(101 ,86 ,78)"
+        'light-green': "rgb(213 ,227 ,181)",
+        'darkWhite': "rgb( 219,208,193)"
       },
       spacing:{
         '1/20': "5%",
