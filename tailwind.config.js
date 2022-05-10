@@ -83,12 +83,17 @@ module.exports = {
         'bRect': "10% 90%"
       },
       dropShadow: {
+        'team': '0 2px 9px 5px rgba(0, 0, 0, 0.58)',
         'text': '2px 3px 4px rgba(0, 0, 0, 0.4)',
         'work': '0 10px 0px 0 red',
         'work2': '30px 10px 0px #4444dd',
-        'title': [
+        'blackTitle': [
           '1px 1px 1px rgba(255, 255, 255, 0.6)',
           '-1px -1px 1px rgba(0, 0, 0, 0.6)'
+        ],
+        'ecuries': [
+            '1px 1px 1px rgba(255, 255, 255, 0.6)',
+            '-1px -1px 1px rgba(0, 0, 0, 0.6)'
         ]
       }
     }

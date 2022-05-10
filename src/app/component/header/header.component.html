@@ -1,13 +1,13 @@
-<header id="header" class="h-24 sm:h-max bg-dark text-white snap-none sm:snap-start sticky sm:relative top-0 z-header overflow-hidden duration-500 ease-out">
-    <div class="flex flex-row sm:flex-col justify-between items-center border-beige sm:border-y-2 py-2 px-5 sm:pt-4 sm:pb-6 sm:space-y-4">
-        <img class="h-28 hidden sm:block" routerLink="/" src="/assets/imgs/logo.png" alt="">
-        <img class="h-20 sm:hidden" routerLink="/" src="/assets/imgs/logo_mobile.png" alt="">
+<header id="header" class="h-24 md:h-max bg-dark text-white snap-none md:snap-start sticky md:relative top-0 z-header overflow-hidden duration-500 ease-out">
+    <div class="flex flex-row md:flex-col justify-between items-center border-beige md:border-y-2 py-2 px-5 md:pt-4 md:pb-6">
+        <img class="h-28 hidden md:block" routerLink="/" src="/assets/imgs/logo.png" alt="">
+        <img class="h-20 md:hidden" routerLink="/" src="/assets/imgs/logo_mobile.png" alt="">
         <!-- Menu Ordi -->
-        <div class="font-links uppercase hidden sm:flex flex-row flex-nowrap space-x-4 items-baseline">
+        <div class="font-links uppercase hidden md:flex flex-row flex-nowrap space-x-4 items-baseline">
             <a routerLinkActive="active" routerLink="/landing">accueil</a>
             <a routerLinkActive="active" routerLink="/team">equipe</a>
             <a routerLinkActive="active" routerLink="/installations">installations</a>
-            <a routerLinkActive="active" routerLink="/prestations/work">prestations</a>
+            <a routerLinkActive="active" routerLink="/prestations">prestations</a>
             <a routerLinkActive="active" routerLink="/philo">philosophie</a>
             <a routerLinkActive="active" routerLink="/withus">à nos côtés</a>
             <a routerLinkActive="active" routerLink="/contact">contact</a>
@@ -22,7 +22,7 @@
 
         <!-- Menu Mobile -->
 
-        <svg id="burger" viewBox="0 0 100 100" data-status="close" class="sm:hidden h-12">
+        <svg id="burger" viewBox="0 0 100 100" data-status="close" class="md:hidden h-12">
             <circle cx="10" cy="10" r="10" fill="CurrentColor" />
             <rect class="origin-tRect" id="tRect" x="10" y="0" width="80" height="20" transform="rotate(0)" fill="CurrentColor" />
             <circle id="trC" cx="90" cy="10" r="10" fill="CurrentColor" />
@@ -70,11 +70,11 @@
             keyTimes="0;0.6;1"/>
         </svg>
     </div>
-    <div id="menu" class="capitalize bg-white h-full w-screen sm:hidden p-4 pt-10 space-y-4 flex flex-col text-3xl z-header overflow-y-scroll text-black">
+    <div id="menu" class="capitalize bg-white h-full w-screen md:hidden p-4 pt-10 space-y-4 flex flex-col text-3xl z-header overflow-y-scroll text-black">
         <a routerLinkActive="active" routerLink="/landing">accueil</a>
         <a routerLinkActive="active" routerLink="/team">equipe</a>
         <a routerLinkActive="active" routerLink="/installations">installations</a>
-        <a routerLinkActive="active" routerLink="/prestations">prestations</a>
+        <a routerLinkActive="active" routerLink="/prestations/work">prestations</a>
         <a routerLinkActive="active" routerLink="/philo">philosophie</a>
         <a routerLinkActive="active" routerLink="/withus">à nos côtés</a>
         <a routerLinkActive="active" routerLink="/contact">contact</a>
