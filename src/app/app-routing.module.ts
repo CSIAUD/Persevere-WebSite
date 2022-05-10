@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { InstallationsComponent } from './pages/installations/installations.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { PrestationsComponent } from './pages/prestations/prestations.component';
@@ -24,14 +24,18 @@ const routes: Routes = [
   { path: '**', redirectTo: "landing", pathMatch: "full"}
 ];
 
+
+
+const routerOptions: ExtraOptions = {
+  useHash: true
+  ,anchorScrolling: 'enabled'
+  ,scrollPositionRestoration: 'enabled'
+  // ,scrollOffset: [0, 64]
+};
+
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, {
-      scrollPositionRestoration: 'enabled',
-      anchorScrolling: 'enabled',
-      // scrollOffset: [0, 64],
-      useHash: true // [x, y]
-    })
+    RouterModule.forRoot(routes, routerOptions)
   ],
   exports: [RouterModule]
 })

@@ -12,12 +12,7 @@ module.exports = {
         'wood': "url('/assets/imgs/wood.jpg')",
         'entrance': "url('/assets/imgs/entrance.jpg')",
         'karine': "url('/assets/imgs/karine_cheval.jpg')",
-        'prestas': "url('/assets/imgs/prestas/first.jpg')",
-        'left-bg': "url('/assets/imgs/work/left.png')",
-        'center-bg': "url('/assets/imgs/work/center.png')",
-        'right-bg': "url('/assets/imgs/work/right.png')",
-        'pension1': "url('/assets/imgs/work/pension1.jpg')",
-        'pension2': "url('/assets/imgs/work/pension2.jpg')"
+        'prestas': "url('/assets/imgs/prestas/first.jpg')"
       },
       fontFamily: {
         'oswald': ['Oswald', 'sans-serif'],
@@ -77,6 +72,7 @@ module.exports = {
       },
       width: {
         'screen': '100vw',
+        'formulas': '485px',
       },
       zIndex: {
         'header': '100',
@@ -88,6 +84,8 @@ module.exports = {
       },
       dropShadow: {
         'text': '2px 3px 4px rgba(0, 0, 0, 0.4)',
+        'work': '0 10px 0px 0 red',
+        'work2': '30px 10px 0px #4444dd',
         'title': [
           '1px 1px 1px rgba(255, 255, 255, 0.6)',
           '-1px -1px 1px rgba(0, 0, 0, 0.6)'
