@@ -5,24 +5,28 @@ module.exports = {
   theme: {
     extend: {
       listStyleType: {
-        circle: 'circle'
+        circle: 'circle',
+        base: "'- '"
       },
       backgroundImage: {
         'wood': "url('/assets/imgs/wood.jpg')",
         'entrance': "url('/assets/imgs/entrance.jpg')",
-        'karine': "url('/assets/imgs/karine_cheval.jpg')"
+        'karine': "url('/assets/imgs/karine_cheval.jpg')",
+        'prestas': "url('/assets/imgs/prestas/first.jpg')"
       },
       fontFamily: {
         'oswald': ['Oswald', 'sans-serif'],
-        'playfair': ['Playfair Display', 'serif']
+        'playfair': ['Playfair Display', 'serif'],
+        'helvetica': ['helvetica-w01-bold', 'helvetica-w02-bold', 'helvetica-lt-w10-bold', 'sans-serif']
       },
       colors: {
-        'dark': "#120E01",
-        'maroon': "#65564E",
-        'green': "#AEC676",
-        'beige': "rgba(175 ,166 ,154, 0.7)",
+        'dark': "rgb(18 ,14 ,1)",
         'citation-bg': "rgb(55 ,45 ,29)",
-        'citation-border': "rgb(101 ,86 ,78)"
+        'maroon': "rgb(101 ,86 ,78)",
+        'green': "rgb(174 ,198 ,118)",
+        'beige': "rgba(175 ,166 ,154, 0.7)",
+        'light-green': "rgb(213 ,227 ,181)",
+        'darkWhite': "rgb( 219,208,193)"
       },
       spacing:{
         '1/20': "5%",
@@ -68,6 +72,7 @@ module.exports = {
       },
       width: {
         'screen': '100vw',
+        'formulas': '485px',
       },
       zIndex: {
         'header': '100',
@@ -76,6 +81,20 @@ module.exports = {
         'center-right': "center right",
         'tRect': "10% 10%",
         'bRect': "10% 90%"
+      },
+      dropShadow: {
+        'team': '0 2px 9px 5px rgba(0, 0, 0, 0.58)',
+        'text': '2px 3px 4px rgba(0, 0, 0, 0.4)',
+        'work': '0 10px 0px 0 red',
+        'work2': '30px 10px 0px #4444dd',
+        'blackTitle': [
+          '1px 1px 1px rgba(255, 255, 255, 0.6)',
+          '-1px -1px 1px rgba(0, 0, 0, 0.6)'
+        ],
+        'ecuries': [
+            '1px 1px 1px rgba(255, 255, 255, 0.6)',
+            '-1px -1px 1px rgba(0, 0, 0, 0.6)'
+        ]
       }
     }
   },

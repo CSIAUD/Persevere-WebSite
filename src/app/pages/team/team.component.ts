@@ -10,7 +10,7 @@ export class TeamComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    // firstSectionHeight();
+    firstSectionHeight();
     resizeImages();
   }
 
@@ -19,15 +19,19 @@ export class TeamComponent implements OnInit {
 window.addEventListener("resize", resizeImages);
 
 function firstSectionHeight(){
-let header = document.querySelectorAll("header")[0].getBoundingClientRect();
-let topDiv = document.querySelector("main>section:first-of-type");
-if(topDiv != null)
-(topDiv as HTMLElement).style.height = "calc(100vh - "+header.height+"px)"
+  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    let header = document.querySelector("#menu")?.getBoundingClientRect();
+    let topDiv = document.querySelector("main>section:first-of-type");
+
+    if(topDiv != null && header != null){
+      (topDiv as HTMLElement).style.height = "calc(100vh - "+header.height+"px)"
+    }
+  }
 }
 
 function resizeImages() {
-let imgs = document.querySelectorAll("#team>div:not(:first-child)>img");
-imgs.forEach(img => {
-  (img as HTMLElement).style.height = (img.getBoundingClientRect().width).toString() + "px";
-});
+  let imgs = document.querySelectorAll("#team>div:not(:first-child)>img");
+  imgs.forEach(img => {
+    (img as HTMLElement).style.height = (img.getBoundingClientRect().width).toString() + "px";
+  });
 }
