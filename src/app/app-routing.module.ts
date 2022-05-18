@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { InstallationsComponent } from './pages/installations/installations.component';
 import { LandingComponent } from './pages/landing/landing.component';
+import { PhiloComponent } from './pages/philo/philo.component';
 import { PrestationsComponent } from './pages/prestations/prestations.component';
 import { ProdComponent } from './pages/prestations/prod/prod.component';
 import { StagesComponent } from './pages/prestations/stages/stages.component';
@@ -21,7 +22,7 @@ const routes: Routes = [
   },
   { path: "team", component: TeamComponent },
   { path: "installations", component: InstallationsComponent },
-  { path: "philo", component: LandingComponent },
+  { path: "philo", component: PhiloComponent },
   { path: "withus", component: LandingComponent },
   { path: "contact", component: LandingComponent },
   { path: "landing", component: LandingComponent },
@@ -31,10 +32,11 @@ const routes: Routes = [
 
 
 const routerOptions: ExtraOptions = {
-  useHash: true
-  ,anchorScrolling: 'enabled'
-  ,scrollPositionRestoration: 'enabled'
-  // ,scrollOffset: [0, 64]
+  useHash: true,
+  anchorScrolling: 'enabled',
+  scrollPositionRestoration: 'top',
+  scrollOffset: [0, 64],
+  onSameUrlNavigation: 'reload',
 };
 
 @NgModule({

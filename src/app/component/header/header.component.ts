@@ -1,4 +1,6 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,12 +9,18 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private router: Router, private route: ActivatedRoute, private viewportScroller: ViewportScroller) {}
   ngOnInit(): void {
     initBurger();
     // initScroll();
     initDropdown();
+
+    console.log(this.route.fragment);
+  }
+  
+  scrollToAnchor(location: string) { 
+    console.log(location);
+    this.viewportScroller.scrollToAnchor(location)
   }
 }
 
@@ -30,7 +38,6 @@ function initDropdown() {
         }
         lis?.forEach(li => {
           li.addEventListener('click', () => {
-            console.log(li.parentElement);
             if(li.parentElement?.classList.contains("opacity-100")){
               swapClass((li.parentElement as HTMLElement), "hidden", "flex");
               swapClass((li.parentElement as HTMLElement), "opacity-0", "opacity-100");
