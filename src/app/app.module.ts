@@ -10,6 +10,8 @@ import { TeamComponent } from './pages/team/team.component';
 import { InstallationsComponent } from './pages/installations/installations.component';
 import { WorkComponent } from './pages/work/work.component';
 import { PrestationsComponent } from './pages/prestations/prestations.component';
+import { GestionComponent } from './pages/gestion/gestion.component';
+import { DocumentComponent } from './pages/gestion/document/document.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PrestationsComponent } from './pages/prestations/prestations.component'
     TeamComponent,
     InstallationsComponent,
     WorkComponent,
-    PrestationsComponent
+    PrestationsComponent,
+    GestionComponent,
+    DocumentComponent
   ],
   imports: [
     BrowserModule,
