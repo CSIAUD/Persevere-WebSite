@@ -1,6 +1,4 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { ActivatedRoute, NavigationEnd, RouterModule, Routes } from '@angular/router';
-import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-work',
@@ -13,7 +11,7 @@ export class WorkComponent implements OnInit {
 
   ngOnInit(): void {
     whoInit();
-    formulasInit();
+    formulasSquare();
   }
 }
 
@@ -46,7 +44,8 @@ function whoInit() {
   });
 }
 
-function formulasInit() {
+window.addEventListener("resize", formulasSquare);
+function formulasSquare() {
   let divs = document.querySelectorAll("#formulas>div");
 
   divs.forEach(elem => {
