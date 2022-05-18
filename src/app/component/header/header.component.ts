@@ -14,8 +14,6 @@ export class HeaderComponent implements OnInit {
     initBurger();
     // initScroll();
     initDropdown();
-
-    console.log(this.route.fragment);
   }
   
   scrollToAnchor(location: string) { 
@@ -31,19 +29,21 @@ function initDropdown() {
     drop => {
       drop.addEventListener('click', (ev) => {
         let ul = (ev.target as HTMLElement).parentElement?.querySelector('ul');
-        let lis = (ul as HTMLElement).querySelectorAll('li');
-        if(ul != null){
-          swapClass(ul, "hidden", "flex");
-          swapClass(ul, "opacity-0", "opacity-100");
+        if(ul){
+          let lis = (ul as HTMLElement).querySelectorAll('li');
+          if(ul != null){
+            swapClass(ul, "hidden", "flex");
+            swapClass(ul, "opacity-0", "opacity-100");
+          }
+          lis?.forEach(li => {
+            li.addEventListener('click', () => {
+              if(li.parentElement?.classList.contains("opacity-100")){
+                swapClass((li.parentElement as HTMLElement), "hidden", "flex");
+                swapClass((li.parentElement as HTMLElement), "opacity-0", "opacity-100");
+              }
+            })
+          });
         }
-        lis?.forEach(li => {
-          li.addEventListener('click', () => {
-            if(li.parentElement?.classList.contains("opacity-100")){
-              swapClass((li.parentElement as HTMLElement), "hidden", "flex");
-              swapClass((li.parentElement as HTMLElement), "opacity-0", "opacity-100");
-            }
-          })
-        });
       });
     }
   );

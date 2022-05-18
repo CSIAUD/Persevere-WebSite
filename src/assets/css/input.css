@@ -13,3 +13,7 @@ html{
     --citation-sides: rgb(146 ,132 ,112);
     --citation-under: rgb(17 ,13 ,1);
 }
+
+.-left-full {
+    left: -100%;
+  }

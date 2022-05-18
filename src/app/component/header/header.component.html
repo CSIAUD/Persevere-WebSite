@@ -16,16 +16,23 @@
                     <li><a routerLinkActive="active" [routerLink]='["/prestations/prod"]' class="h-full w-full">Production de fourrage</a></li>
                 </ul>
             </div>
-            <a routerLinkActive="active" [routerLink]='["/philo"]'>philosophie</a>
+            <div class="dropDown relative">
+                <p id="prestations" class="cursor-pointer">philosophie</p>
+                <ul class="opacity-0 hidden duration-500 absolute top-10 left-1/2 -translate-x-1/2 origin-top-center z-header bg-dark border-2 border-maroon w-max text-xs text-center p-2 border-rounded-lg space-y-2 flex-col">
+                    <li><a routerLinkActive="active" [routerLink]='["/philo/work"]' class="h-full w-full">De travail</a></li>
+                    <li><a routerLinkActive="active" [routerLink]='["/philo/natural"]' class="h-full w-full">Comfortable Natural Life Paddock</a></li>
+                    <li><a routerLinkActive="active" [routerLink]='["/philo/cavalier"]' class="h-full w-full">Le bien être du cavalier</a></li>
+                </ul>
+            </div>
             <a routerLinkActive="active" [routerLink]='["/withus"]'>à nos côtés</a>
             <a routerLinkActive="active" [routerLink]='["/contact"]'>contact</a>
             <a routerLinkActive="active" [routerLink]='["/blog"]'>blog</a>
-            <!-- <div>
+            <div>
                 <a [routerLink]='["login"]'>
-                    <span class="iconify inline h-14 w-16" data-icon="carbon:user-avatar-filled-alt"></span>
                     Se Connecter
+                    <span class="iconify inline h-14 w-16" data-icon="carbon:user-avatar-filled-alt"></span>
                 </a>
-            </div> -->
+            </div>
         </div>
 
         <!-- Menu Mobile -->

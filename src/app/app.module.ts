@@ -13,6 +13,7 @@ import { PrestationsComponent } from './pages/prestations/prestations.component'
 import { StagesComponent } from './pages/prestations/stages/stages.component';
 import { ProdComponent } from './pages/prestations/prod/prod.component';
 import { PhiloComponent } from './pages/philo/philo.component';
+import { PWorkComponent } from './pages/philo/p-work/p-work.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PhiloComponent } from './pages/philo/philo.component';
     PrestationsComponent,
     StagesComponent,
     ProdComponent,
-    PhiloComponent
+    PhiloComponent,
+    PWorkComponent
   ],
   imports: [
     BrowserModule,
