@@ -11,6 +11,7 @@ import { InstallationsComponent } from './pages/installations/installations.comp
 import { WorkComponent } from './pages/prestations/work/work.component';
 import { PrestationsComponent } from './pages/prestations/prestations.component';
 import { StagesComponent } from './pages/prestations/stages/stages.component';
+import { ProdComponent } from './pages/prestations/prod/prod.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { StagesComponent } from './pages/prestations/stages/stages.component';
     InstallationsComponent,
     WorkComponent,
     PrestationsComponent,
-    StagesComponent
+    StagesComponent,
+    ProdComponent
   ],
   imports: [
     BrowserModule,

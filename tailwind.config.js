@@ -3,8 +3,8 @@ module.exports = {
   theme: {
     extend: {
       listStyleType: {
-        circle: 'circle',
-        base: "'- '"
+        dot: 'disc',
+        tiret: "'- '"
       },
       backgroundImage: {
         'wood': "url('/assets/imgs/wood.jpg')",
@@ -73,6 +73,9 @@ module.exports = {
         'screen': '100vw',
         'formulas': '485px',
       },
+      height: {
+        'middleScreen': '50vh',
+      },
       inset: {
         'full': '100%'
       },
@@ -100,6 +103,7 @@ module.exports = {
       },
       boxShadow: {
         'team': '0 2px 9px 5px rgba(0, 0, 0, 0.53)',
+        'prod': '0 1px 3px rgba(0, 0, 0, 0.5)',
       }
     }
   },
