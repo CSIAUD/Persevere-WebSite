@@ -20,18 +20,23 @@ window.addEventListener("resize", resizeImages);
 
 function firstSectionHeight(){
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-    let header = document.querySelector("#menu")?.getBoundingClientRect();
+    let header = document.querySelector("#header")?.getBoundingClientRect();
     let topDiv = document.querySelector("main>section:first-of-type");
 
     if(topDiv != null && header != null){
-      (topDiv as HTMLElement).style.height = "calc(100vh - "+header.height+"px)"
+      // (topDiv as HTMLElement).style.height = "calc(100vh - "+header.height+"px)";
+      (topDiv as HTMLElement).style.marginTop = header.height+"px)";
     }
   }
 }
 
 function resizeImages() {
   let imgs = document.querySelectorAll("#team>div:not(:first-child)>img");
+  let video = document.querySelector("iframe");
   imgs.forEach(img => {
     (img as HTMLElement).style.height = (img.getBoundingClientRect().width).toString() + "px";
   });
+  if(video != null){
+    (video as HTMLElement).style.height = (video.getBoundingClientRect().width*(9/16)).toString() + "px";
+  }
 }

@@ -1,18 +1,16 @@
 module.exports = {
-  content: [
-    "./src/**/*.{html,ts}",
-  ],
+  content: ['./src/**/*.{html,js}', './node_modules/tw-elements/dist/js/**/*.js'],
   theme: {
     extend: {
       listStyleType: {
-        circle: 'circle',
-        base: "'- '"
+        dot: 'disc',
+        tiret: "'- '"
       },
       backgroundImage: {
         'wood': "url('/assets/imgs/wood.jpg')",
         'entrance': "url('/assets/imgs/entrance.jpg')",
         'karine': "url('/assets/imgs/karine_cheval.jpg')",
-        'prestas': "url('/assets/imgs/prestas/first.jpg')"
+        'prestas': "url('/assets/imgs/prestas/work/first.jpg')"
       },
       fontFamily: {
         'oswald': ['Oswald', 'sans-serif'],
@@ -20,13 +18,14 @@ module.exports = {
         'helvetica': ['helvetica-w01-bold', 'helvetica-w02-bold', 'helvetica-lt-w10-bold', 'sans-serif']
       },
       colors: {
-        'dark': "rgb(18 ,14 ,1)",
-        'citation-bg': "rgb(55 ,45 ,29)",
-        'maroon': "rgb(101 ,86 ,78)",
-        'green': "rgb(174 ,198 ,118)",
-        'beige': "rgba(175 ,166 ,154, 0.7)",
-        'light-green': "rgb(213 ,227 ,181)",
-        'darkWhite': "rgb( 219,208,193)"
+        'dark':         "rgb(18 ,14 ,1)",
+        'citation-bg':  "rgb(55 ,45 ,29)",
+        'maroon':       "rgb(101 ,86 ,78)",
+        'green':        "rgb(174 ,198 ,118)",
+        'beige':        "rgba(175 ,166 ,154, 0.7)",
+        'light-green':  "rgb(213 ,227 ,181)",
+        'darkWhite':    "rgb(219 ,208 ,193)",
+        'backStage':    "rgb(251 ,243 ,232)"
       },
       spacing:{
         '1/20': "5%",
@@ -74,16 +73,22 @@ module.exports = {
         'screen': '100vw',
         'formulas': '485px',
       },
+      height: {
+        'middleScreen': '50vh',
+      },
+      inset: {
+        'full': '100%'
+      },
       zIndex: {
         'header': '100',
       },
       transformOrigin: {
         'center-right': "center right",
+        'top-center': "topn center",
         'tRect': "10% 10%",
         'bRect': "10% 90%"
       },
       dropShadow: {
-        'team': '0 2px 9px 5px rgba(0, 0, 0, 0.58)',
         'text': '2px 3px 4px rgba(0, 0, 0, 0.4)',
         'work': '0 10px 0px 0 red',
         'work2': '30px 10px 0px #4444dd',
@@ -95,6 +100,10 @@ module.exports = {
             '1px 1px 1px rgba(255, 255, 255, 0.6)',
             '-1px -1px 1px rgba(0, 0, 0, 0.6)'
         ]
+      },
+      boxShadow: {
+        'team': '0 2px 9px 5px rgba(0, 0, 0, 0.53)',
+        'prod': '0 1px 3px rgba(0, 0, 0, 0.5)',
       }
     }
   },
