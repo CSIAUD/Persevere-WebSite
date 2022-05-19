@@ -1,13 +1,16 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-work',
   templateUrl: './work.component.html',
   styleUrls: ['./work.component.css']
 })
-export class WorkComponent implements OnInit {
 
-  constructor() {}
+export class WorkComponent implements OnInit {
+  @Output() toId = new EventEmitter();
+
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     whoInit();
@@ -26,7 +29,6 @@ function whoInit() {
     elem.addEventListener('mouseenter', (ev) => {
       let title = (ev.target as HTMLElement).children[0];
       let text = (ev.target as HTMLElement).children[1];
-      console.log(title.children[0]);
       text.classList.remove('opacity-0');
       text.classList.replace('-top-32', 'top-0');
       title.children[0].classList.add('opacity-0');

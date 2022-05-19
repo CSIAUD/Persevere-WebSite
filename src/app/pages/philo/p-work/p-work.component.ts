@@ -6,16 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./p-work.component.css']
 })
 export class PWorkComponent implements OnInit {
-
+  delay = 6; // temps entre 2 Slides en secondes
+  anim = 1; // temps animation Slides en secondes
   constructor() { }
 
   ngOnInit(): void {
-    carousselLoop();
+    carousselLoop(this.delay, this.anim);
   }
 
 }
 
-function carousselLoop() {
+function carousselLoop(delay: number, anim: number) {
   let caroussel = (document.querySelector("#caroussel") as HTMLElement);
   let length = caroussel.children.length-1;
   if(caroussel){
@@ -39,9 +40,9 @@ function carousselLoop() {
           setTimeout(() => {
           left.classList.add('duration-1000');
           }, 100);
-        }, 1000);
-        carousselLoop();
+        }, (anim*1000));
+        carousselLoop(delay, anim);
       }
-    }, 2500);
+    }, (delay*1000 - anim*1000));
   }
 }

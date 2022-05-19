@@ -11,7 +11,7 @@
                 <p id="prestations" class="cursor-pointer">prestations</p>
                 <ul class="opacity-0 hidden duration-500 absolute top-10 left-1/2 -translate-x-1/2 origin-top-center z-header bg-dark border-2 border-maroon w-max text-xs text-center p-2 border-rounded-lg space-y-2 flex-col">
                     <li><a routerLinkActive="active" [routerLink]='["/prestations/work"]' class="h-full w-full">Travail du cheval et enseignement</a></li>
-                    <li><a routerLinkActive="active" [routerLink]='["/prestations/work"]' fragment="formulas" class="h-full w-full">Formules et tarifs</a></li>
+                    <li><a routerLinkActive="active" [routerLink]='["/prestations/work"]' onclick="toId('formulaTitle')" class="h-full w-full">Formules et tarifs</a></li>
                     <li><a routerLinkActive="active" [routerLink]='["/prestations/stages"]' class="h-full w-full">Stages</a></li>
                     <li><a routerLinkActive="active" [routerLink]='["/prestations/prod"]' class="h-full w-full">Production de fourrage</a></li>
                 </ul>
@@ -26,7 +26,6 @@
             </div>
             <a routerLinkActive="active" [routerLink]='["/withus"]'>à nos côtés</a>
             <a routerLinkActive="active" [routerLink]='["/contact"]'>contact</a>
-            <a routerLinkActive="active" [routerLink]='["/blog"]'>blog</a>
             <div>
                 <a [routerLink]='["login"]'>
                     Se Connecter
@@ -93,7 +92,6 @@
         <a routerLinkActive="active" [routerLink]='["/philo"]'>philosophie</a>
         <a routerLinkActive="active" [routerLink]='["/withus"]'>à nos côtés</a>
         <a routerLinkActive="active" [routerLink]='["/contact"]'>contact</a>
-        <a routerLinkActive="active" [routerLink]='["/blog"]'>blog</a>
 
         <hr class="border-t-2">
 
