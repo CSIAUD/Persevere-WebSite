@@ -8,10 +8,15 @@ import { HeaderComponent } from './component/header/header.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { TeamComponent } from './pages/team/team.component';
 import { InstallationsComponent } from './pages/installations/installations.component';
-import { WorkComponent } from './pages/work/work.component';
+import { WorkComponent } from './pages/prestations/work/work.component';
 import { PrestationsComponent } from './pages/prestations/prestations.component';
 import { GestionComponent } from './pages/gestion/gestion.component';
 import { DocumentComponent } from './pages/gestion/document/document.component';
+import { StagesComponent } from './pages/prestations/stages/stages.component';
+import { ProdComponent } from './pages/prestations/prod/prod.component';
+import { PhiloComponent } from './pages/philo/philo.component';
+import { PWorkComponent } from './pages/philo/p-work/p-work.component';
+import { PNaturalComponent } from './pages/philo/p-natural/p-natural.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +29,12 @@ import { DocumentComponent } from './pages/gestion/document/document.component';
     WorkComponent,
     PrestationsComponent,
     GestionComponent,
-    DocumentComponent
+    DocumentComponent,
+    StagesComponent,
+    ProdComponent,
+    PhiloComponent,
+    PWorkComponent,
+    PNaturalComponent
   ],
   imports: [
     BrowserModule,

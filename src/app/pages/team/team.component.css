@@ -54,21 +54,6 @@ a>img:hover{
 
 /* IMAGES ========================================================================================= */
 
-#team>div:not(:first-child)>img{
-    top: 0;
-    bottom: 0;
-    margin-bottom: auto;
-    margin-top: auto;
-}
-#team>div:not(:first-child)>a>img{
-    top: 0;
-    bottom: 0;
-    margin-bottom: auto;
-    margin-top: auto;
-    width: 100%;
-    border-radius: 50%;
-    border: 2px solid white;
-}
 
 /*
 sm => 640px

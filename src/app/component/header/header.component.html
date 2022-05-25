@@ -1,23 +1,37 @@
-<header id="header" class="h-24 md:h-max bg-dark text-white snap-none md:snap-start sticky md:relative top-0 z-header overflow-hidden duration-500 ease-out">
+<header id="header" class="h-24 md:h-max bg-dark text-white snap-none md:snap-start sticky md:relative top-0 z-header overflow-y-visible duration-500 ease-out">
     <div class="flex flex-row md:flex-col justify-between items-center border-beige md:border-y-2 py-2 px-5 md:pt-4 md:pb-6">
-        <img class="h-28 hidden md:block" routerLink="/" src="/assets/imgs/logo.png" alt="">
-        <img class="h-20 md:hidden" routerLink="/" src="/assets/imgs/logo_mobile.png" alt="">
+        <img class="h-28 hidden md:block" [routerLink]='["/"]' src="/assets/imgs/logo.png" alt="">
+        <img class="h-20 md:hidden" [routerLink]='["/"]' src="/assets/imgs/logo_mobile.png" alt="">
         <!-- Menu Ordi -->
         <div class="font-links uppercase hidden md:flex flex-row flex-nowrap space-x-4 items-baseline">
-            <a routerLinkActive="active" routerLink="/landing">accueil</a>
-            <a routerLinkActive="active" routerLink="/team">equipe</a>
-            <a routerLinkActive="active" routerLink="/installations">installations</a>
-            <a routerLinkActive="active" routerLink="/prestations">prestations</a>
-            <a routerLinkActive="active" routerLink="/philo">philosophie</a>
-            <a routerLinkActive="active" routerLink="/withus">à nos côtés</a>
-            <a routerLinkActive="active" routerLink="/contact">contact</a>
-            <a routerLinkActive="active" routerLink="/blog">blog</a>
-            <!-- <div>
-                <a routerLink="login">
-                    <span class="iconify inline h-14 w-16" data-icon="carbon:user-avatar-filled-alt"></span>
+            <a routerLinkActive="active" [routerLink]='["/landing"]'>accueil</a>
+            <a routerLinkActive="active" [routerLink]='["/team"]'>equipe</a>
+            <a routerLinkActive="active" [routerLink]='["/installations"]'>installations</a>
+            <div class="dropDown relative">
+                <p id="prestations" class="cursor-pointer">prestations</p>
+                <ul class="opacity-0 hidden duration-500 absolute top-10 left-1/2 -translate-x-1/2 origin-top-center z-header bg-dark border-2 border-brown w-max text-xs text-center p-2 border-rounded-lg space-y-2 flex-col">
+                    <li><a routerLinkActive="active" [routerLink]='["/prestations/work"]' class="h-full w-full">Travail du cheval et enseignement</a></li>
+                    <li><a routerLinkActive="active" [routerLink]='["/prestations/work"]' onclick="toId('formulaTitle')" class="h-full w-full">Formules et tarifs</a></li>
+                    <li><a routerLinkActive="active" [routerLink]='["/prestations/stages"]' class="h-full w-full">Stages</a></li>
+                    <li><a routerLinkActive="active" [routerLink]='["/prestations/prod"]' class="h-full w-full">Production de fourrage</a></li>
+                </ul>
+            </div>
+            <div class="dropDown relative">
+                <p id="prestations" class="cursor-pointer">philosophie</p>
+                <ul class="opacity-0 hidden duration-500 absolute top-10 left-1/2 -translate-x-1/2 origin-top-center z-header bg-dark border-2 border-brown w-max text-xs text-center p-2 border-rounded-lg space-y-2 flex-col">
+                    <li><a routerLinkActive="active" [routerLink]='["/philo/work"]' class="h-full w-full">De travail</a></li>
+                    <li><a routerLinkActive="active" [routerLink]='["/philo/natural"]' class="h-full w-full">Comfortable Natural Life Paddock</a></li>
+                    <li><a routerLinkActive="active" [routerLink]='["/philo/cavalier"]' class="h-full w-full">Le bien être du cavalier</a></li>
+                </ul>
+            </div>
+            <a routerLinkActive="active" [routerLink]='["/withus"]'>à nos côtés</a>
+            <a routerLinkActive="active" [routerLink]='["/contact"]'>contact</a>
+            <div>
+                <a [routerLink]='["login"]'>
                     Se Connecter
+                    <span class="iconify inline h-14 w-16" data-icon="carbon:user-avatar-filled-alt"></span>
                 </a>
-            </div> -->
+            </div>
         </div>
 
         <!-- Menu Mobile -->
@@ -71,41 +85,21 @@
         </svg>
     </div>
     <div id="menu" class="capitalize bg-white h-full w-screen md:hidden p-4 pt-10 space-y-4 flex flex-col text-3xl z-header overflow-y-scroll text-black">
-        <a routerLinkActive="active" routerLink="/landing">accueil</a>
-        <a routerLinkActive="active" routerLink="/team">equipe</a>
-        <a routerLinkActive="active" routerLink="/installations">installations</a>
-        <a routerLinkActive="active" routerLink="/prestations/work">prestations</a>
-        <a routerLinkActive="active" routerLink="/philo">philosophie</a>
-        <a routerLinkActive="active" routerLink="/withus">à nos côtés</a>
-        <a routerLinkActive="active" routerLink="/contact">contact</a>
-        <a routerLinkActive="active" routerLink="/blog">blog</a>
+        <a routerLinkActive="active" [routerLink]='["/landing"]'>accueil</a>
+        <a routerLinkActive="active" [routerLink]='["/team"]'>equipe</a>
+        <a routerLinkActive="active" [routerLink]='["/installations"]'>installations</a>
+        <a routerLinkActive="active" [routerLink]='["/prestations/work"]'>prestations</a>
+        <a routerLinkActive="active" [routerLink]='["/philo"]'>philosophie</a>
+        <a routerLinkActive="active" [routerLink]='["/withus"]'>à nos côtés</a>
+        <a routerLinkActive="active" [routerLink]='["/contact"]'>contact</a>
 
         <hr class="border-t-2">
 
         <div class="w-max right-0 left-0 ml-auto mr-0">
-            <a routerLink="login">
+            <a [routerLink]='["login"]'>
                 Se Connecter
                 <span class="iconify inline h-14 w-16" data-icon="carbon:user-avatar-filled-alt"></span>
             </a>
         </div>
     </div>
 </header>
-<!-- <div id="menu" class="hidden capitalize bg-white w-screen h-screen absolute left-0 top-0 sm:hidden p-4 pt-10 space-y-4 flex flex-col text-2xl z-header overflow-y-scroll">
-    <a routerLinkActive="active" routerLink="/landing">accueil</a>
-    <a routerLinkActive="active" routerLink="/team">equipe</a>
-    <a routerLinkActive="active" routerLink="/installations">installations</a>
-    <a routerLinkActive="active" routerLink="/prestations">prestations</a>
-    <a routerLinkActive="active" routerLink="/philo">philosophie</a>
-    <a routerLinkActive="active" routerLink="/withus">à nos côtés</a>
-    <a routerLinkActive="active" routerLink="/contact">contact</a>
-    <a routerLinkActive="active" routerLink="/blog">blog</a>
-
-    <hr class="border-t-2">
-
-    <div class="w-max right-0 left-0 ml-auto mr-0">
-        <a routerLink="login">
-            Se Connecter
-            <span class="iconify inline h-14 w-16" data-icon="carbon:user-avatar-filled-alt"></span>
-        </a>
-    </div>
-</div> -->
