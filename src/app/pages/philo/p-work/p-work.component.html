@@ -15,7 +15,7 @@
                   <p>En effet l'éthologie est, selon sa définition, une science :<br>
                     ...</p>
                 </div>
-                <button class="text-green w-max py-1 px-4 duration-200 mx-auto rounded-md hover:text-citation-bg hover:bg-green hover:font-medium">En savoir plus</button>
+                <button class="text-green w-max py-1 px-4 duration-200 mx-auto rounded-md hover:text-citation-bg hover:bg-green hover:font-medium" onclick="toId('ethologie')">En savoir plus</button>
               </div>
             </div>
           </div>
@@ -33,7 +33,7 @@
                   <p>Ayant de nombreuses années d'expériences en dressage et ayant eu la chance de me former avec de nombreux grands cavaliers classiques.<br><br>
                     Je suis...</p>
                 </div>
-                <button class="text-green w-max py-1 px-4 duration-200 mx-auto rounded-md hover:text-citation-bg hover:bg-green hover:font-medium">En savoir plus</button>
+                <button class="text-green w-max py-1 px-4 duration-200 mx-auto rounded-md hover:text-citation-bg hover:bg-green hover:font-medium" onclick="toId('sep1')">En savoir plus</button>
               </div>
             </div>
           </div>
@@ -51,7 +51,7 @@
                   <p>Depuis maintenant 6 ans j’ai la chance de rencontrer des couples venant de tous les horizons et de toutes les disciplines.<br>
                     Chaque rencontre, chaque humain et chaque cheval a été un enrichissement personnel et professionnel !</p>
                 </div>
-                <button class="text-green w-max py-1 px-4 duration-200 mx-auto rounded-md hover:text-citation-bg hover:bg-green hover:font-medium">En savoir plus</button>
+                <button class="text-green w-max py-1 px-4 duration-200 mx-auto rounded-md hover:text-citation-bg hover:bg-green hover:font-medium" onclick="toId('work')">En savoir plus</button>
               </div>
             </div>
           </div>
@@ -60,20 +60,120 @@
       </div>
   </section>
   <section class="snap-start text-black bg-wood bg-fixed bg-cover bg-bottom">
-      <div class="bg-white/70 w-full snap-end">
-          <div class="text-xl font-playfair flex flex-col gap-y-5 w-13/20 mx-auto pt-10 pb-10">
-              <h3>Qu'est ce que l'éthologie ? Un éthologue ?</h3>
-              <p>En effet l'éthologie est, selon sa définition, une science :</p>
-              <p>"Biologie comparée des comportements des espèces dans leur milieu naturel (respect des exigences qui constituent le biotope de l'espèce considérée). Elle demande des connaissances approfondies en biologie animale, en génétique, en neurophysiologie. D'autre part, nous ne pouvons faire de l'éthologie sur une seule espèce. En effet, il n'est pas possible de comprendre le comportement d'un cheval ou d'un autre animal si nous ne possédons pas déjà une connaissance en éthologie fondamentale et une connaissance de l'évolution des comportements liées à l'évolution du vivant. [...] L'éthologie est une science d'observation et non une science d'intervention sur l'animal. Ce n'est donc pas une méthode de dressage ou d'éducation."  </p>
-              <p>source Station pluridisciplinaire de Metz.</p>
-              <p>Par conséquent, "Quelle que soit leur formation équestre, ne sont donc Ethologues que les personnes pouvant justifier de l'un des diplômes ou équivalences nécessaires pour devenir professeur des universités ou maître de conférences et ne devraient être qualifiées de Comportementalistes équins que celles ayant obtenu au minimum un Diplôme Universitaire en éthologie équine". source Equiref.com</p>
-              <p>Tout comme je rajouterai, qu'un vétérinaire, aussi compétant soit-il, n'est spécialisé en comportement qu'après avoir suivi une formation spécifique en zoopsychiatrie.</p>
-              <p>"Tout professionnel, ne pouvant justifier de ces qualifications est un "cavalier professionnel", "chuchoteur", "behaviouriste" ou "éducateur équin" [ndlr selon ses compétences et spécificités], c'est un professionnel qui, dans son propre métier, a développé des pratiques et méthodes de travail "non traditionnelles", influencées notamment par des horsemen réputés (chuchoteurs ou nouveaux maîtres) ou ceux qui, en Europe, ont développé des méthodes s'en inspirant." source Equiref.com</p>
-              <p>Cela ne signifie pas pour autant qu'ils sont tous incompétents ou ne possèdent pas les connaissances ou l'expérience nécessaire pour vous venir en aide à vous et votre cheval, mais qu'ils n'appartiennent pas à la même catégorie de professionnels.</p>
-              <p>En outre, si un cavalier professionnel ou un éducateur équin n'est ni un Ethologue ni un Comportementaliste, et par conséquent n'est pas en mesure de dresser un bilan comportemental complet de votre cheval, la réciproque est vraie, le travail d'un éthologue n'est pas de dresser ou éduquer un cheval !!</p>
-              <p>A chacun son métier.</p>
-              <p>Pour en savoir plus sur le monde de la science Ethologique, je vous invite à visiter le site d'Hélène ROCHE :  Ethologie-cheval.fr</p>
+    <div class="bg-white/70 w-full max-h-screen overflow-y-auto">
+      <div id="ethologie" class="text-xl font-playfair flex flex-col gap-y-5 w-15/20 2xl:w-12/20 mx-auto pt-10 pb-10 text-justify font-extralight">
+        <h3 class="text-3xl font-oswald">Qu'est ce que l'éthologie ? Un éthologue ?</h3>
+        <p>En effet l'éthologie est, selon sa définition, une science :</p>
+        <p class="pl-10">"Biologie comparée des comportements des espèces dans leur milieu naturel (respect des exigences qui constituent le biotope de l'espèce considérée). Elle demande des connaissances approfondies en biologie animale, en génétique, en neurophysiologie. D'autre part, nous ne pouvons faire de l'éthologie sur une seule espèce. En effet, il n'est pas possible de comprendre le comportement d'un cheval ou d'un autre animal si nous ne possédons pas déjà une connaissance en éthologie fondamentale et une connaissance de l'évolution des comportements liées à l'évolution du vivant. [...] L'éthologie est une science d'observation et non une science d'intervention sur l'animal. Ce n'est donc pas une méthode de dressage ou d'éducation."<br>
+        <span class="italic">Source : Station pluridisciplinaire de Metz.</span></p>
+        <p>Par conséquent, "Quelle que soit leur formation équestre, ne sont donc Ethologues que les personnes pouvant justifier de l'un des diplômes ou équivalences nécessaires pour devenir professeur des universités ou maître de conférences et ne devraient être qualifiées de Comportementalistes équins que celles ayant obtenu au minimum un Diplôme Universitaire en éthologie équine".<span class="italic">Source : Equiref.com</span></p>
+        <p>Tout comme je rajouterai, qu'un vétérinaire, aussi compétant soit-il, n'est spécialisé en comportement qu'après avoir suivi une formation spécifique en zoopsychiatrie.</p>
+        <p>"Tout professionnel, ne pouvant justifier de ces qualifications est un "cavalier professionnel", "chuchoteur", "behaviouriste" ou "éducateur équin" [ndlr selon ses compétences et spécificités], c'est un professionnel qui, dans son propre métier, a développé des pratiques et méthodes de travail "non traditionnelles", influencées notamment par des horsemen réputés (chuchoteurs ou nouveaux maîtres) ou ceux qui, en Europe, ont développé des méthodes s'en inspirant." <span class="italic">Source : Equiref.com</span></p>
+        <p>Cela ne signifie pas pour autant qu'ils sont tous incompétents ou ne possèdent pas les connaissances ou l'expérience nécessaire pour vous venir en aide à vous et votre cheval, mais qu'ils n'appartiennent pas à la même catégorie de professionnels.</p>
+        <p>En outre, si un cavalier professionnel ou un éducateur équin n'est ni un Ethologue ni un Comportementaliste, et par conséquent n'est pas en mesure de dresser un bilan comportemental complet de votre cheval, la réciproque est vraie, le travail d'un éthologue n'est pas de dresser ou éduquer un cheval !!</p>
+        <p>A chacun son métier.</p>
+        <p>Pour en savoir plus sur le monde de la science Ethologique, je vous invite à visiter le site d'Hélène ROCHE : <a class="underline" href="https://www.heleneroche.fr/fr/" target="_blank" rel="noopener noreferrer">Ethologie-cheval.fr</a></p>
+      </div>
+    </div>
+  </section>
+  <div id="sep1" class="bg-[url('/assets/imgs/philo/work/sep1.webp')] w-full h-[40vh] bg-fixed bg-cover snap-start"></div>
+  <section class="text-black bg-wood bg-fixed bg-cover bg-bottom">
+      <div class="snap-start bg-white/70 w-full">
+          <div class="text-xl font-playfair flex flex-col gap-y-5 w-15/20 2xl:w-12/20 mx-auto pt-10 pb-10 text-justify font-extralight max-h-screen overflow-y-auto">
+            <h3 class="text-3xl font-oswald">Maintenant que nous savons de quoi nous parlons, qui suis-je vraiment ?</h3>
+            <p>Ayant de très nombreuses années d'expériences en dressage et ayant eu la chance de me former avec de nombreux grands cavaliers classiques (que ce soit avec mes chevaux, les leurs ou bien de jeunes poulains). Je suis...</p>
+            <div class="flex flex-row justify-between items-center pl-5">
+              <img class="border-2 border-white rounded-lg shadow-prod" src="/assets/imgs/philo/work/part1_1.webp" alt="">
+              <p class="text-2xl font-bold">... Cavalière de Dressage Professionnelle.</p>
+            </div>
+            <p>Cette partie de mon travail consiste à former les chevaux à être de bons partenaires sous la selle, sur le plat en général et plus particulièrement en dressage.<br>
+              Mes nombreuses connaissances et expériences dans ce domaine de compétences, m'apportent dans mon travail avec les chevaux une grande technicité (précision et légèreté des aides, ressenti musculaire et articulaire du cheval, ressenti du schéma corporel du cheval, anatomie, etc.) ainsi que de nombreuses connaissances sur la locomotion et la notion du cheval "juste", travaillant "dans le bon sens" qui fait presque toujours défaut à l'équitation dite "éthologique".</p>
+            <div>
+              <p>Selon Patrick Le Rolland : </p>
+              <p class="pl-8">" L'objectif de la formation du cheval est de favoriser toutes ses capacités naturelles. Il faut rendre au cheval, gêné par le poids du cavalier, une locomotion aisée. Ceci passe par un dressage basé sur la recherche de l'allure et de l'attitude. Ainsi, le cheval trouve le confort lui permettant de se décontracter et d'acquérir suffisamment de confiance, de souplesse, de force, d'équilibre et de régularité pour aborder les mouvements tout en conservant ou en améliorant ses allures naturelles. La gymnastique du cheval va renforcer l'arrière-train qui assure la propulsion et l'activité de ce qui va permettre l'allègement de l'avant main. Le cheval sera ainsi plus facile à diriger. Les mouvements ne doivent jamais être acceptés en absence de légèreté. Gymnastiquer le cheval, c'est le mobiliser, le délier, installer les cadences en passant d'un équilibre à l'autre en changeant les attitudes pour ensuite aller dans la technique. [...] Lors de l'apprentissage, le cheval  a besoin de beaucoup d'encouragements. Il faut demander souvent mais peu et surtout ne jamais s'arréter sur une défense. Quand le cheval résiste et se contracte, c'est que son intégrité physique et son désir naturel de se porter en avant ont été gâché par un mauvais travail ou une mauvaise demande de la part du cavalier.[...] Je rappelle que ce n'est que par une progression graduelle et constante que l'on pourra peut être gravir les plus hautes marches de l'art équestre. Et ce n'est qu'à partir du moment où les particularités anatomiques, physiologiques et psychique du cheval seront préservées que l'on effectuera un travail juste, dans le bon sens et que l'on respectera le cheval. " Le cheval doit toujours être en bonne condition physique et mentale."  Le cheval doit être heureux. [...] Une formation correcte est basée sur le respect de ses allures naturelles et de sa locomotion."<br>
+                <span class="italic">Source : Les principes de dressage de Patrick Le Rolland par Jean-Marc Vié.</span></p>
+            </div>
+            <div class="flex flex-row items-stretch pt-5">
+              <div class="flex flex-col gap-y-6 pt-4 pr-4">
+                <p>Suite à mon diplôme du DU Ethologie du Cheval, je suis</p>
+                <p class="font-bold text-center">Comportementaliste Equin</p>
+                <p class="text-justify">"Le comportementaliste effectue sa mission en se déplaçant pour observer le comportement de l’animal dans son milieu.<br>
+                  Il  étudie  les relations  entre  l’animal,  son   milieu, et son entourage, ce qui lui permet d’appréhender les influences de l’environnement sur l’animal.</p>
+              </div><img class="border-2 border-white rounded-lg shadow-prod" src="/assets/imgs/philo/work/part1_2.webp" alt="">
+            </div>
+            <p>Par la suite, il explique au propriétaire comment organiser l’environnement de l’animal afin de favoriser une cohabitation harmonieuse. Il l'informe également des besoins éthologiques de leur animal ainsi que des conduites à tenir à son égard dans le respect des conditions du bien-être animal.</p>
+            <p>Le comportementaliste connaît les fondamentaux de l'apprentissage des animaux familiers (de l'acquisition par conditionnement aux situations d'apprentissage complexe) et possède des connaissances en éthologie, biologie animale et psychologie. Il est capable d'analyser les interactions entre l'animal et son environnement.</p>
+            <p>Le comportementaliste ne se substitue pas au dresseur, au vétérinaire ou au psychologue et, le cas échéant, il lui incombe d’orienter le propriétaire vers le professionnel adapté, s'il détecte un comportement de l’animal qui dépasse les limites de ses compétences." <span class="italic">Source : wikipedia.</span></p>
+            <p>"Chuchoteur" ?... Je préfère parler d'...</p>
+            <div class="flex flex-row">
+              <div class="flex flex-col justify-between w-14/20 gap-y-8 pr-3">
+                <p class="font-bold text-center text-2xl">Educateur Equin.</p>
+                <p>Car il s'agit bien d'éducation. Et comme toute éducation, il est très souvent question d'éthique et de bon sens.</p>
+                <p>Si nous nous en tenons à l’étymologie du mot "éduquer", sa signification est "guider hors de..." c'est à dire transmettre à l'être vivant afin de lui permettre de se développer sur le plan physique, intellectuel, moral et technique.</p>
+                <p>L'éducateur est donc celui qui accompagne et guide l'animal dans son cheminement.</p>
+                <p>L'éducation doit passer par plusieurs apprentissages importants, de mon point de vue, le savoir (connaissances intellectuelles), le savoir-faire (compétences pratiques et leur maîtrise par l'expérience de l'exercice), le savoir-être (capacité de produire des actions et des réactions adaptées à l'environnement).</p>
+                <p>Pour parvenir à son résultat l'éducateur possède de nombreux outils et notamment les différents principes d'apprentissages qui ont été codifiés par les scientifiques ces dernières années.<br>
+                  Il est de son devoir de placer son élève dans une situation adaptée à ses capacités (physiques, émotionnelles et mentales) puis de le soumettre à une pédagogie réfléchie en fonction de l'objectif à atteindre.<br>
+                  Cette pédagogie doit notamment porter son attention sur les échanges entre l'enseignant et l'élève mais également sur la relation entre élèves (humains comme chevaux).</p>
+                <p>Un bon éducateur doit également avoir des connaissances solides en éthologie, biomécanique et biologie.</p>
+                <p>J'aime beaucoup cette Phrase de Tom Dorrance qui résume assez bien la logique que tout éducateur devrait garder en mémoire :<br>
+                <span class="pl-8">"Le cavalier doit sentir ce que le cheval est en train de ressentir, le situer [ndlr mentalement] pour opérer à partir de son niveau à lui. [....] Il doit ensuite penser en premier, puis arranger  son approche pour faire en sorte que son idée devienne celle du cheval.[....] Préparer, attendre, et amener le cheval à trouver de lui-même les bonnes solutions et à se prendre en charge.[....] Tout se résume en trois mots: Feeling, Timing et Equilibre. S'ils sont respectés, le cheval mettra ses pieds entre vos mains."</span><br>
+                <span class="italic">Source : True Unity de Tom Dorrance, traduit par Antoine Cloux.</span></p>
+              </div>
+              <div class="flex flex-col justify-between w-6/20 pb-12">
+                <img class="border-2 border-white rounded-lg shadow-prod" src="/assets/imgs/philo/work/part1_3.webp" alt="">
+                <img class="border-2 border-white rounded-lg shadow-prod" src="/assets/imgs/philo/work/part1_4.webp" alt="">
+                <img class="border-2 border-white rounded-lg shadow-prod" src="/assets/imgs/philo/work/part1_5.webp" alt="">
+              </div>
+            </div>
+            <div class="h-full pt-24 space-y-16 text-white">
+              <div class="citation relative h-max w-17/20 mx-auto text-center">
+                <b></b>
+                <b></b>
+                <b></b>
+                <div class="bg-citation-bg border-4 border-brown p-7 flex flex-col gap-5">
+                  <h3 class="text-2xl">En résumé :</h3>
+                  <p>Le <span class="text-light-brown">cavalier de dressage</span> rend le cheval facile sous la selle ; pour ce faire, il améliore ses capacités physiques et affine les codes cheval/cavalier</p>
+                  <p>Le <span class="text-light-brown">comportementaliste</span> influence le comportement de l'animal en agissant sur ses besoins fondamentaux ; pour ce faire, il modifie certains paramètres de son environnement.</p>
+                  <p>L'<span class="text-light-brown">éducateur</span> , quant à lui, influence le comportement de l'animal en conditionnant ses réponses et attitudes ; pour ce faire, il utilise les différentes méthodes d'apprentissages.</p>
+                  <p>Ces trois activités sont différentes et complémentaires à la formation d'un cheval bien dans ses sabots et l'élaboration d'un partenariat cheval/cavalier fiable et stable dans le temps.</p>
+                </div>
+              </div>
+            </div>
           </div>
       </div>
+  </section>
+  <div class="bg-[url('/assets/imgs/philo/work/sep2.webp')] w-full h-[40vh] bg-fixed bg-cover"></div> 
+  <section class="text-black bg-wood bg-fixed bg-cover bg-bottom">
+    <div class="snap-start bg-white/70 w-full">
+      <div id="work" class="text-xl font-playfair justify-between flex flex-row flex-nowrap items-stretch gap-x-5 w-15/20 2xl:w-12/20 mx-auto py-12 text-justify font-extralight max-h-screen overflow-y-auto">
+        <div class="flex flex-col justify-between w-17/20 2xl:w-14/20 h-full gap-y-6">
+          <h3 class="text-3xl font-oswald">Comment j'appréhende mon travail ?</h3>
+          <p>Depuis maintenant 9 ans j’ai la chance de rencontrer des couples chevaux/cavaliers venant de tous les horizons et de toutes les disciplines. Chaque rencontre, chaque humain et chaque cheval a été un enrichissement personnel et professionnel !</p>
+          <p>Des problématiques particulièrement variées m’ont été soumises durant tous ce temps… des chevaux qui démarrent dans la vie avec toute l’innocence qui les caractérise, d’autres abîmés par la vie et retranchés dans leur méfiance, des physiquement cassés ne sachant plus comment habiter leur propre corps, des phobiques accompagnés de leur éternelle panique mais aussi des cavaliers déstabilisés à bout de souffle, d’espoir, d’envie et de plaisir ne sachant plus ni quoi faire ni qui écouter…. Mais tous avaient en commun la volonté de créer avec leur partenaire une relation de confiance et de partage ! Ils voulaient « faire les choses bien » pour leur cheval !</p>
+          <p>Mon travail consiste à guider ces couples sur le bon chemin "mental, physique et d'esprit" afin que leurs réactions soient confortables et sécuritaires l’un pour l’autre. ​</p>
+          <p>En premier lieu, il m’est apparu comme primordial d’organiser la gestion quotidienne des chevaux qui nous sont confiés au plus près de leurs besoins fondamentaux (Comfortable Natural Life Paddock ©) afin que ces derniers soient dans de bonnes dispositions physiques et mentales…. Ils sont prêts à apprendre !</p>
+          <p>Nos protégés commencent toujours leur séjour par passer entre les mains des membres de mon équipe afin d’éliminer toutes causes physiques et/ou matérielles de l’équation. Un suivi complet est mis en place avec le propriétaire si nécessaire. Il en va de même pour leurs cavaliers qui sont parfois dirigés vers des professionnels partenaires (ostéopathe, préparateur mental, etc.)</p>
+          <p>Ma ligne de conduite est d’être « cheval centré » :  Être cheval centré c’est accepter de s’extraire des idées, des jugements et des besoins de notre espèces pour se plonger dans ceux de l’autre. Mais bien au-delà de ça c’est aussi changer sa vision du monde en développant son esprit d’analyse et sa capacité d'empathie. Mais c'est avant tout, accepter de faire taire l’anthropocentrisme et l’anthropomorphisme qui conditionnent l’être humain.</p>
+          <p>Les premières séances sont toujours consacrées à faire le point avec le cheval. Il est alors libre d’exprimer ce qu’il souhaite et de réagir comme bon lui semble… il parle j’écoute, il fait j’observe, sans attentes particulières.<br>
+            Ce n’est qu’après que je commence à nettoyer le passé...ensemble, on clôt un chapitre avant d’en ouvrir un neuf. C’est durant cette période, souvent délicate, que la confiance et la relation commence à s’établir.<br>
+            Cette phase est étroitement enchevêtrée avec la phase suivante, si bien qu’il n’y a pas vraiment de délimitation entre l’une et l’autre…</p>
+          <p>La phase suivante consiste donc a inculquer au cheval d’abord, puis au cavalier/propriétaire ensuite, les bons comportements et les bonnes réponses. Mes connaissances en éthologie et en biologie m’ont poussé à travailler les chevaux en utilisant principalement le renforcement positif (ce type d'apprentissage a déjà largement fait ses preuves sur les animaux sauvages, dans les zoos par exemple. Je reste stupéfaite de le voir si peu répandu, et même pire, souvent décrié dans le monde équestre).</p>
+          <p>Mon expérience hétéroclite met à ma disposition de très nombreux outils de travail à pied comme monté ; j’ai ainsi la possibilité d’adapter le travail aux capacités physiques et psychologiques de chacun avec éthique et bon sens.</p>
+          <p>Ce n’est que l’application de l’ensemble de ses paramètres qui nous permet d’obtenir des résultats visibles et stables dans le temps.</p>
+          <p>C’est également pour cette raison qu’il est primordial, pour toute mon équipe d’approfondir continuellement son sens du cheval et ses connaissances, afin d'être toujours plus proche d'un travail juste et complet.</p>
+        </div>
+        <div class="flex flex-col justify-between w-5/20 gap-y-8">
+          <img class="border-white border-2 rounded-lg" src="/assets/imgs/philo/work/part2_1.webp" alt="">
+          <img class="border-white border-2 rounded-lg" src="/assets/imgs/philo/work/part2_2.webp" alt="">
+          <img class="border-white border-2 rounded-lg" src="/assets/imgs/philo/work/part2_3.webp" alt="">
+          <img class="border-white border-2 rounded-lg" src="/assets/imgs/philo/work/part2_4.webp" alt="">
+          <img class="border-white border-2 rounded-lg" src="/assets/imgs/philo/work/part2_5.webp" alt="">
+          <img class="border-white border-2 rounded-lg" src="/assets/imgs/philo/work/part2_6.webp" alt="">
+          <img class="border-white border-2 rounded-lg" src="/assets/imgs/philo/work/part2_7.webp" alt="">
+          <img class="border-white border-2 rounded-lg" src="/assets/imgs/philo/work/part2_8.webp" alt="">
+        </div>
+      </div>
+    </div>
   </section>
 </main>

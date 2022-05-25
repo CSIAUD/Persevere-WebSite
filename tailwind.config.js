@@ -19,9 +19,10 @@ module.exports = {
         'helvetica': ['helvetica-w01-bold', 'helvetica-w02-bold', 'helvetica-lt-w10-bold', 'sans-serif']
       },
       colors: {
-        'dark':         "rgb(18 ,14 ,1)",
-        'citation-bg':  "rgb(55 ,45 ,29)",
-        'maroon':       "rgb(101 ,86 ,78)",
+        'dark':         "rgb(18  ,14  ,1)",
+        'citation-bg':  "rgb(55  ,45  ,29)",
+        'brown':        "rgb(101 ,86  ,78)",
+        'light-brown':  "rgb(159 ,140 ,130)",
         'green':        "rgb(174 ,198 ,118)",
         'beige':        "rgba(175 ,166 ,154, 0.7)",
         'light-green':  "rgb(213 ,227 ,181)",
@@ -125,8 +126,11 @@ module.exports = {
         'team': '0 2px 9px 5px rgba(0, 0, 0, 0.53)',
         'prod': '0 1px 3px rgba(0, 0, 0, 0.5)',
         'pWork': ['0 1px 3px rgba(0, 0, 0, 0.5)','0.74px 0.67px 8px 2px rgba(0, 0, 0, 0.5)'],
-      }
-    }
+      },
+      screens: {
+        '2xl': '1540px',
+      },
+    },
   },
   plugins: [],
   darkMode: 'class'

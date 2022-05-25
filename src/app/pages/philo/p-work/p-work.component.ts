@@ -12,6 +12,7 @@ export class PWorkComponent implements OnInit {
 
   ngOnInit(): void {
     carousselLoop(this.delay, this.anim);
+    firstSize();
   }
 
 }
@@ -45,4 +46,10 @@ function carousselLoop(delay: number, anim: number) {
       }
     }, (delay*1000 - anim*1000));
   }
+}
+
+function firstSize() {
+  let header = document.querySelector("header")?.getBoundingClientRect();
+  let section = document.querySelector("main>section:first-child");
+  if(header && section)(section as HTMLElement).style.height = "calc(100vh - " + header.height + "px";
 }

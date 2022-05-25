@@ -35,14 +35,14 @@ function initDropdown() {
             swapClass(ul, "hidden", "flex");
             swapClass(ul, "opacity-0", "opacity-100");
           }
-          lis?.forEach(li => {
-            li.addEventListener('click', () => {
-              if(li.parentElement?.classList.contains("opacity-100")){
-                swapClass((li.parentElement as HTMLElement), "hidden", "flex");
-                swapClass((li.parentElement as HTMLElement), "opacity-0", "opacity-100");
-              }
-            })
-          });
+          // lis?.forEach(li => {
+          //   li.addEventListener('click', () => {
+          //     if(li.parentElement?.classList.contains("opacity-100")){
+          //       swapClass((li.parentElement as HTMLElement), "hidden", "flex");
+          //       swapClass((li.parentElement as HTMLElement), "opacity-0", "opacity-100");
+          //     }
+          //   })
+          // });
         }
       });
     }

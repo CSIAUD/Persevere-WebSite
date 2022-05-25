@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { InstallationsComponent } from './pages/installations/installations.component';
 import { LandingComponent } from './pages/landing/landing.component';
+import { PNaturalComponent } from './pages/philo/p-natural/p-natural.component';
 import { PWorkComponent } from './pages/philo/p-work/p-work.component';
 import { PhiloComponent } from './pages/philo/philo.component';
 import { PrestationsComponent } from './pages/prestations/prestations.component';
@@ -28,7 +29,7 @@ const routes: Routes = [
     component: PhiloComponent,
     children: [
       {path: "work", component: PWorkComponent},
-      {path: "natural", component: PWorkComponent},
+      {path: "natural", component: PNaturalComponent},
       {path: "cavalier", component: PWorkComponent}
     ]
   },
