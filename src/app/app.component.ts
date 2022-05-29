@@ -1,26 +1,27 @@
-import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
+import { Component } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
   title = 'Ecuries persévère';
+
   constructor(router: Router) {
     router.events.subscribe((event) => {
       if(event instanceof NavigationEnd) {
         
-        console.log("on change de page !!!");
+        // console.log("on change de page !!!");
         let drops = document.querySelectorAll(".dropDown");
 
         drops.forEach(
           drop => {
             let ul = drop.querySelector("ul");
             if(ul){
-              console.log(ul);
+              // console.log(ul);
               if(ul.classList.contains("flex")){
                 swapClass((ul as HTMLElement), "flex", "hidden")
               }
@@ -37,9 +38,6 @@ export class AppComponent implements OnInit {
       // NavigationError
       // RoutesRecognized
     });
-  }
-
-  ngOnInit(): void {
   }
 }
 
