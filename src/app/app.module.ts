@@ -19,6 +19,7 @@ import { PhiloComponent } from './pages/philo/philo.component';
 import { PWorkComponent } from './pages/philo/p-work/p-work.component';
 import { PNaturalComponent } from './pages/philo/p-natural/p-natural.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PCavalierComponent } from './pages/philo/p-cavalier/p-cavalier.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProdComponent,
     PhiloComponent,
     PWorkComponent,
-    PNaturalComponent
+    PNaturalComponent,
+    PCavalierComponent
   ],
   imports: [
     BrowserModule,

@@ -4,7 +4,8 @@ module.exports = {
     extend: {
       listStyleType: {
         dot: 'disc',
-        tiret: "'- '"
+        base: "'- '",
+        decimal: "decimal"
       },
       backgroundImage: {
         'wood': "url('/assets/imgs/wood.jpg')",

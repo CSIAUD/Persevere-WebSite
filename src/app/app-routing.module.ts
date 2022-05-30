@@ -4,6 +4,7 @@ import { InstallationsComponent } from './pages/installations/installations.comp
 import { LandingComponent } from './pages/landing/landing.component';
 import { PNaturalComponent } from './pages/philo/p-natural/p-natural.component';
 import { PWorkComponent } from './pages/philo/p-work/p-work.component';
+import { PCavalierComponent } from './pages/philo/p-cavalier/p-cavalier.component';
 import { PhiloComponent } from './pages/philo/philo.component';
 import { PrestationsComponent } from './pages/prestations/prestations.component';
 import { ProdComponent } from './pages/prestations/prod/prod.component';
@@ -38,7 +39,7 @@ const routes: Routes = [
     children: [
       {path: "work", component: PWorkComponent},
       {path: "natural", component: PNaturalComponent},
-      {path: "cavalier", component: PWorkComponent}
+      {path: "cavalier", component: PCavalierComponent}
     ]
   },
   { path: "withus", component: LandingComponent },
