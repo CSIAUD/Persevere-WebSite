@@ -22,6 +22,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { PCavalierComponent } from './pages/philo/p-cavalier/p-cavalier.component';
 import { CalendarComponent } from './pages/gestion/calendar/calendar.component';
 import { RolesComponent } from './pages/gestion/roles/roles.component';
+import { HorseComponent } from './pages/gestion/horse/horse.component';
+import { LoginComponent } from './pages/gestion/login/login.component';
+import { RegisterComponent } from './pages/gestion/register/register.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { GContactComponent } from './pages/gestion/g-contact/g-contact.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +47,12 @@ import { RolesComponent } from './pages/gestion/roles/roles.component';
     PNaturalComponent,
     PCavalierComponent,
     CalendarComponent,
-    RolesComponent
+    RolesComponent,
+    HorseComponent,
+    LoginComponent,
+    RegisterComponent,
+    ContactComponent,
+    GContactComponent
   ],
   imports: [
     BrowserModule,

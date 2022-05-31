@@ -20,7 +20,7 @@
     </div>
     <!-- <div *ngIf="installations" id="installs" class="relative flex flex-row flex-wrap items-stretch gap-x-1/20 gap-y-12 px-1/20 pb-24"> -->
     <div id="installs" class="relative flex flex-row flex-wrap items-stretch gap-x-1/20 gap-y-12 px-1/20 pb-24">
-        <!-- <div *ngFor="let install of installations" class="snap-center w-6/20">
+        <div *ngFor="let install of installations" class="snap-center w-6/20">
             <img class="h-14/20 object-cover w-full" src="{{install.image}}" alt="">
             <div class="bg-citation-bg w-full h-6/20 text-center p-5">
                 <h3 class="font-oswald font-extralight text-md uppercase">{{install.name}}</h3>
@@ -28,8 +28,8 @@
                     {{install.options}}
                 </p>
             </div>
-        </div> -->
-        <div class="snap-center w-6/20">
+        </div>
+        <!-- <div class="snap-center w-6/20">
             <img class="h-64 object-cover w-full" src="/assets/imgs/install/carriere_couverte.jpg" alt="">
             <div class="bg-citation-bg w-full text-center p-5">
                 <h3 class="font-oswald font-extralight uppercase text-base">carrière couverte</h3>
@@ -163,6 +163,6 @@
                     De très nombreux chemins de balade de 15 minutes à plus de 3 heures et accessibles à tous niveaux
                 </p>
             </div>
-        </div>
+        </div> -->
     </div>
 </main>

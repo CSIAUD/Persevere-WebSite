@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { ExtraOptions, RouterLink, RouterModule, Routes } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { InstallationsComponent } from './pages/installations/installations.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { PNaturalComponent } from './pages/philo/p-natural/p-natural.component';
@@ -15,6 +15,11 @@ import { DocumentComponent } from './pages/gestion/document/document.component';
 import { GestionComponent } from './pages/gestion/gestion.component';
 import { CalendarComponent } from './pages/gestion/calendar/calendar.component';
 import { RolesComponent } from './pages/gestion/roles/roles.component';
+import { HorseComponent } from './pages/gestion/horse/horse.component';
+import { LoginComponent } from './pages/gestion/login/login.component';
+import { RegisterComponent } from './pages/gestion/register/register.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { GContactComponent } from './pages/gestion/g-contact/g-contact.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "landing", pathMatch: "full"},
@@ -32,7 +37,11 @@ const routes: Routes = [
     children: [
       {path: "document", component: DocumentComponent},
       {path: "calendar", component: CalendarComponent},
-      {path: "role", component: RolesComponent}
+      {path: "horse", component: HorseComponent},
+      {path: "role", component: RolesComponent},
+      {path: "login", component: LoginComponent},
+      {path: "contact", component: GContactComponent},
+      {path: "register", component: RegisterComponent}
     ]
   },
   { path: "team", component: TeamComponent },
@@ -47,7 +56,7 @@ const routes: Routes = [
     ]
   },
   { path: "withus", component: LandingComponent },
-  { path: "contact", component: LandingComponent },
+  { path: "contact", component: ContactComponent },
   { path: "landing", component: LandingComponent },
   { path: '**', redirectTo: "landing", pathMatch: "full"}
 ];
