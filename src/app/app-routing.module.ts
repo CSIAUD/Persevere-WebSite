@@ -12,6 +12,8 @@ import { WorkComponent } from './pages/prestations/work/work.component';
 import { TeamComponent } from './pages/team/team.component';
 import { DocumentComponent } from './pages/gestion/document/document.component';
 import { GestionComponent } from './pages/gestion/gestion.component';
+import { CalendarComponent } from './pages/gestion/calendar/calendar.component';
+import { RolesComponent } from './pages/gestion/roles/roles.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "landing", pathMatch: "full"},
@@ -27,7 +29,9 @@ const routes: Routes = [
     path: "gestion",
     component: GestionComponent,
     children: [
-      {path: "document", component: DocumentComponent}
+      {path: "document", component: DocumentComponent},
+      {path: "calendar", component: CalendarComponent},
+      {path: "role", component: RolesComponent}
     ]
   },
   { path: "team", component: TeamComponent },

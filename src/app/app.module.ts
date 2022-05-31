@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -19,6 +19,8 @@ import { PhiloComponent } from './pages/philo/philo.component';
 import { PWorkComponent } from './pages/philo/p-work/p-work.component';
 import { PNaturalComponent } from './pages/philo/p-natural/p-natural.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CalendarComponent } from './pages/gestion/calendar/calendar.component';
+import { RolesComponent } from './pages/gestion/roles/roles.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { HttpClientModule } from '@angular/common/http';
     ProdComponent,
     PhiloComponent,
     PWorkComponent,
-    PNaturalComponent
+    PNaturalComponent,
+    CalendarComponent,
+    RolesComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +50,9 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
 })
 export class AppModule { }
