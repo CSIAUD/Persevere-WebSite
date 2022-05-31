@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -20,6 +20,8 @@ import { PWorkComponent } from './pages/philo/p-work/p-work.component';
 import { PNaturalComponent } from './pages/philo/p-natural/p-natural.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PCavalierComponent } from './pages/philo/p-cavalier/p-cavalier.component';
+import { CalendarComponent } from './pages/gestion/calendar/calendar.component';
+import { RolesComponent } from './pages/gestion/roles/roles.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { PCavalierComponent } from './pages/philo/p-cavalier/p-cavalier.componen
     PhiloComponent,
     PWorkComponent,
     PNaturalComponent,
-    PCavalierComponent
+    PCavalierComponent,
+    CalendarComponent,
+    RolesComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +52,9 @@ import { PCavalierComponent } from './pages/philo/p-cavalier/p-cavalier.componen
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
 })
 export class AppModule { }
