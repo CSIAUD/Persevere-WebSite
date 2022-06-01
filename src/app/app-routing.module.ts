@@ -39,11 +39,11 @@ const routes: Routes = [
       {path: "calendar", component: CalendarComponent},
       {path: "horse", component: HorseComponent},
       {path: "role", component: RolesComponent},
-      {path: "login", component: LoginComponent},
       {path: "contact", component: GContactComponent},
-      {path: "register", component: RegisterComponent}
     ]
   },
+  {path: "login", component: LoginComponent},
+  {path: "register", component: RegisterComponent},
   { path: "team", component: TeamComponent },
   { path: "installations", component: InstallationsComponent },
   { 

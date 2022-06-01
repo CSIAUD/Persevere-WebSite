@@ -44,10 +44,10 @@ export class HorseComponent implements OnInit {
         horseTemp.id = horse['id'];
         horseTemp.name = horse['attributes']['name'];
         horseTemp.race = horse['attributes']['race'];
-        horseTemp.image = '';
+        horseTemp.image = environment.apiURL + horse['attributes']['image']['data']['attributes']['url'];
         horseTemp.sexe = horse['attributes']['sexe'];
-        horseTemp.birthdate = new Date(horse['attributes']['birthdate']);
-        horseTemp.entree = new Date(horse['attributes']['date_entree']);
+        horseTemp.birthdate = formatDate(new Date(horse['attributes']['birthdate']));
+        horseTemp.entree = formatDate(new Date(horse['attributes']['date_entree']));
 
         this.horses.push(horseTemp);
       }
@@ -58,4 +58,15 @@ export class HorseComponent implements OnInit {
     }
   }
 
+}
+function formatDate(date: Date): string{
+  let formatedDate = "";
+
+  formatedDate += ("0"+date.getDate()).slice(-2);
+  formatedDate += "/";
+  formatedDate += ("0"+(date.getMonth()+1)).slice(-2);
+  formatedDate += "/";
+  formatedDate += date.getFullYear();
+
+  return formatedDate;
 }

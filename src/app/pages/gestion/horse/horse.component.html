@@ -1,18 +1,17 @@
 
-<div class="bg-beige p-10 font-oswald font-light text-xl snap-start" >
-    <div class="mx-auto w-6/20 nm-flat-beige p-5 rounded-lg">
-        <h3 class="mx-auto w-max mb-10">Les chevaux :</h3>
-        <ul>
-            <li *ngFor="let horse of horses">
-                <ul class="flex flex-col items-start p-2 ">
-                    <li class="self-center my-10">Image non disponible</li>
-                    <li class=" border-[1px] border-brown p-2 m-2  ">Nom : {{horse.name}}</li>
-                    <li class=" border-[1px] border-brown p-2 m-2 ">Date d'entrée : {{horse.entree}} </li>
-                    <li class=" border-[1px] border-brown p-2 m-2 ">Date de naissance : {{horse.birthdate}} </li>
-                    <li class=" border-[1px] border-brown p-2 m-2 ">Race : {{horse.race}} </li>
-                    <li class=" border-[1px] border-brown p-2 m-2 ">Sexe : {{horse.sexe ? "Mâle" : "Femelle"}} </li>
-                </ul>
+<h3 class="mx-auto w-max text-3xl mb-5">Les chevaux :</h3>
+<ul class="flex flex-row flex-wrap justify-around">
+    <li *ngFor="let horse of horses" class="w-8/20 rounded-lg nm-flat-brown p-1">
+        <ul class="flex flex-col items-start p-2 g-2 nm-inset-brown rounded-lg h-full">
+            <li class="self-center">
+                <img *ngIf="horse.image" src="{{horse.image}}" class="19/20 rounded">
+                <h2 *ngIf="!horse.image">Image non disponible</h2>
             </li>
+            <li class=" border-[1px] border-brown p-2">Nom : {{horse.name}}</li>
+            <li class=" border-[1px] border-brown p-2">Date d'entrée : {{horse.entree}} </li>
+            <li class=" border-[1px] border-brown p-2">Date de naissance : {{horse.birthdate}} </li>
+            <li class=" border-[1px] border-brown p-2">Race : {{horse.race}} </li>
+            <li class=" border-[1px] border-brown p-2">Sexe : {{horse.sexe ? "Mâle" : "Femelle"}} </li>
         </ul>
-    </div>
-</div>
+    </li>
+</ul>
