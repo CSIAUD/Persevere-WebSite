@@ -1,12 +1,15 @@
 <div class="bg-brown w-full p-12">
-    <div class="flex flex-row flex-nowrap gap-10 w-max mx-auto">
+    <div class="flex flex-row flex-nowrap gap-10 min-win-1/2 w-max mx-auto">
         <nav class="w-64 nm-flat-brown">
-            <ul class="w-full flex flex-col gap-4 p-4 text-white text-xl">
+            <ul class="w-max flex flex-col gap-4 p-4 text-white text-xl">
                 <li class="nm-convex-beige-sm rounded-full text-center hover:nm-concave-beige-sm">
                     <a routerLinkActive="active" class="px-4 py-2" [routerLink]='["/gestion/contact"]'>Contact</a>
                 </li>
                 <li class="nm-convex-beige-sm rounded-full text-center hover:nm-concave-beige-sm">
-                    <a routerLinkActive="active" class="px-4 py-2" [routerLink]='["/gestion/horse"]'>Liste Chevaux</a>
+                    <a routerLinkActive="active" class="px-4 py-2" [routerLink]='["/gestion/horse"]'>Liste chevaux</a>
+                </li>
+                <li class="nm-convex-beige-sm rounded-full text-center hover:nm-concave-beige-sm">
+                    <a routerLinkActive="active" class="px-4 py-2" [routerLink]='["/gestion/role"]'>Liste utilisateurs</a>
                 </li>
             </ul>
         </nav>
