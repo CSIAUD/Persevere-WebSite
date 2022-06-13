@@ -30,7 +30,9 @@
               "src/assets/css/output.css"
             ],
             "scripts": [
-              "src/assets/js/iconify.js"
+              "src/assets/js/iconify.js",
+              "src/assets/js/utility.js",
+              "src/assets/js/main.js"
             ]
           },
           "configurations": {

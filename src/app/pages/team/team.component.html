@@ -39,8 +39,22 @@
     </section>
     <section id="team" class="snap-start w-full px-5 sm:px-14 pt-24 sm:pt-24 pb-14 bg-fixed bg-wood bg-cover bg-bottom h-max space-y-16 flex flex-col md:flex-row flex-wrap items-stretch justify-between text-base">
         <div class="w-full">
-            <iframe class="left-0 right-0 mx-auto border-4 border-maroon w-1/2 h-64" src="https://www.youtube.com/embed/ta834AjwX9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="left-0 right-0 mx-auto border-4 border-brown w-1/2 h-64" src="https://www.youtube.com/embed/ta834AjwX9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+        <!-- <div *ngFor="let user of users" class="w-[49%] bg-citation-bg shadow-team border-4 p-7 border-dark snap-center flex flex-row items-center">
+            <a *ngIf="user.url;else no_url" class="w-6/20" href="{{user.url}}" target="_blank">
+                <img class="rounded-full border-2 border-white w-full" src="/assets/imgs/team/e_valente.jpg" alt="">
+            </a>
+            <ng-template #no_url>
+                <img class="rounded-full border-2 border-white w-full" src="/assets/imgs/team/e_valente.jpg" alt="">
+            </ng-template>
+
+            <div class="w-16/20">
+                <h3 class="font-oswald font-extralight text-3xl">{{ user.fullName }}</h3>
+                <p class="text-green text-sm">{{ user.job }}</p>
+                <p>{{ user.description }}</p>
+            </div>
+        </div> -->
         <div class="w-[49%] bg-citation-bg flex flex-row items-center shadow-team p-7 border-4 border-dark snap-center">
             <img class="rounded-full border-2 border-white w-6/20" src="/assets/imgs/team/r_ladiglione.jpg" alt="">
             <div class="w-16/20">
@@ -52,7 +66,7 @@
             </div>
         </div>
         <div class="w-[49%] bg-citation-bg shadow-team border-4 p-7 border-dark snap-center flex flex-row items-center">
-            <a class="w-4/20" href="https://www.equita-sens.com" target="_blank">
+            <a class="w-6/20" href="https://www.equita-sens.com" target="_blank">
                 <img class="rounded-full border-2 border-white w-full" src="/assets/imgs/team/e_valente.jpg" alt="">
             </a>
             <div class="w-16/20">
@@ -63,7 +77,7 @@
             </div>
         </div>
         <div class="w-[49%] bg-citation-bg shadow-team border-4 p-7 border-dark snap-center flex flex-row items-center">
-            <a class="w-4/20" href="https://podologueequin.com" target="_blank">
+            <a class="w-6/20" href="https://podologueequin.com" target="_blank">
                 <img class="rounded-full border-2 border-white w-full" src="/assets/imgs/team/l_fuertes.jpg" alt="">
             </a>
             <div class="w-16/20">
@@ -74,7 +88,7 @@
             </div>
         </div>
         <div class="w-[49%] bg-citation-bg shadow-team border-4 p-7 border-dark snap-center flex flex-row items-center">
-            <img class="rounded-full border-2 border-white w-4/20" src="/assets/imgs/team/b_francois.jpg" alt="">
+            <img class="rounded-full border-2 border-white w-6/20" src="/assets/imgs/team/b_francois.jpg" alt="">
             <div class="w-16/20">
                 <h3 class="font-oswald font-extralight text-3xl">Bruno FRANCOIS</h3>
                 <p class="text-green text-sm">Dentiste Equin</p>
@@ -82,7 +96,7 @@
             </div>
         </div>
         <div class="w-[49%] bg-citation-bg shadow-team border-4 p-7 border-dark snap-center flex flex-row items-center">
-            <img class="rounded-full border-2 border-white w-4/20" src="/assets/imgs/team/duo.jpg" alt="">
+            <img class="rounded-full border-2 border-white w-6/20" src="/assets/imgs/team/duo.jpg" alt="">
             <div class="w-16/20">
                 <h3 class="font-oswald font-extralight text-3xl">Maxime QUITTARD et Steven RUMBO</h3>
                 <p class="text-green text-sm">Maréchaux ferrants</p>
@@ -92,7 +106,7 @@ C'est pour la richesse de leur technique que nous nous sommes tournés vers eux 
             </div>
         </div>
         <div class="w-[49%] bg-citation-bg shadow-team border-4 p-7 border-dark snap-center flex flex-row items-center">
-            <a class="w-4/20" href="https://www.ophelie-plaa.com" target="_blank">
+            <a class="w-6/20" href="https://www.ophelie-plaa.com" target="_blank">
                 <img class="rounded-full border-2 border-white w-full" src="/assets/imgs/team/o_plaa.jpg" alt="">
             </a>
             <div class="w-16/20">
@@ -104,7 +118,7 @@ Ophélie est un rayon de soleil qui partage un peu de la douceur de son monde av
             </div>
         </div>
         <div class="w-[49%] bg-citation-bg shadow-team border-4 p-7 border-dark snap-center flex flex-row items-center">
-            <a class="w-4/20" href="https://ergonomie-equestre.fr" target="_blank">
+            <a class="w-6/20" href="https://ergonomie-equestre.fr" target="_blank">
                 <img class="rounded-full border-2 border-white w-full" src="/assets/imgs/team/e_cottereau.jpg" alt="">
             </a>
             <div class="w-16/20">
@@ -117,7 +131,7 @@ Depuis 2012, elle se consacre entièrement au travail d'ergonomie du matériel �
             </div>
         </div>
         <div class="w-[49%] bg-citation-bg shadow-team border-4 p-7 border-dark snap-center flex flex-row items-center">
-            <a class="w-4/20" href="https://ergonomie-equestre.fr" target="_blank">
+            <a class="w-6/20" href="https://ergonomie-equestre.fr" target="_blank">
                 <img class="rounded-full border-2 border-white w-full" src="/assets/imgs/team/t_roberts.jpg" alt="">
             </a>
             <div class="w-16/20">
@@ -128,7 +142,7 @@ Douce et discrète, elle n'en possède pas moins un oeil acéré, capable de rep
             </div>
         </div>
         <div class="w-[49%] bg-citation-bg shadow-team border-4 p-7 border-dark snap-center flex flex-row items-center">
-            <a class="w-4/20" href="https://www.carinemeurou-naturopathe.com" target="_blank">
+            <a class="w-6/20" href="https://www.carinemeurou-naturopathe.com" target="_blank">
                 <img class="rounded-full border-2 border-white w-full" src="/assets/imgs/team/c_meurou.jpg" alt="">
             </a>
             <div class="w-16/20">
@@ -140,7 +154,7 @@ Bienveillante  et à l'écoute de ces patients, elle propose des solutions adapt
             </div>
         </div>
         <div class="w-[49%] bg-citation-bg shadow-team border-4 p-7 border-dark snap-center flex flex-row items-center">
-            <a class="w-4/20" href="https://www.facebook.com/Noemieranchon/" target="_blank">
+            <a class="w-6/20" href="https://www.facebook.com/Noemieranchon/" target="_blank">
                 <img class="rounded-full border-2 border-white w-full" src="/assets/imgs/team/n_ranchon.jpg" alt="">
             </a>
             <div class="w-16/20">
@@ -152,7 +166,7 @@ Très à l'écoute du cheval et du cavalier, nous apprécions tout autant sa min
             </div>
         </div>
         <div class="w-[49%] bg-citation-bg shadow-team border-4 p-7 border-dark snap-center flex flex-row items-center">
-            <img class="rounded-full border-2 border-white w-4/20" src="/assets/imgs/team/marie.jpg" alt="">
+            <img class="rounded-full border-2 border-white w-6/20" src="/assets/imgs/team/marie.jpg" alt="">
             <div class="w-16/20">
                 <h3 class="font-oswald font-extralight text-3xl">Marie</h3>
                 <p class="text-green text-sm">Ostéopathe</p>
@@ -162,7 +176,7 @@ Sa capacité à aller au bout des choses tout en respectant les limites du cheva
             </div>
         </div>
         <div class="w-[49%] bg-citation-bg shadow-team border-4 p-7 border-dark snap-center flex flex-row items-center">
-            <a class="w-4/20" href="https://www.celinebocchino.com" target="_blank">
+            <a class="w-6/20" href="https://www.celinebocchino.com" target="_blank">
                 <img class="rounded-full border-2 border-white w-full" src="/assets/imgs/team/c_boccchino.jpg" alt="">
             </a>
             <div class="w-16/20">

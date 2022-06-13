@@ -1,0 +1,10 @@
+<ul *ngIf="contacts.length">
+    <li *ngFor="let contact of contacts">
+        <p>Nom : {{contact.fullName}}</p>
+        <p>Mail : {{contact.mail}}</p>
+        <p>Sujet : {{contact.subject}}</p>
+        <p>Message : {{contact.message}}</p>
+        <button (click)="delete(contact.id)">Supprimer</button>
+    </li>
+</ul>
+<h2 *ngIf="!contacts.length">Aucun contact enregistré</h2>

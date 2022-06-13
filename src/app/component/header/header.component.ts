@@ -1,4 +1,6 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,12 +9,16 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private router: Router, private route: ActivatedRoute, private viewportScroller: ViewportScroller) {}
   ngOnInit(): void {
     initBurger();
     // initScroll();
     initDropdown();
+  }
+  
+  scrollToAnchor(location: string) { 
+    console.log(location);
+    this.viewportScroller.scrollToAnchor(location)
   }
 }
 
@@ -23,20 +29,21 @@ function initDropdown() {
     drop => {
       drop.addEventListener('click', (ev) => {
         let ul = (ev.target as HTMLElement).parentElement?.querySelector('ul');
-        let lis = (ul as HTMLElement).querySelectorAll('li');
-        if(ul != null){
-          swapClass(ul, "hidden", "flex");
-          swapClass(ul, "opacity-0", "opacity-100");
+        if(ul){
+          let lis = (ul as HTMLElement).querySelectorAll('li');
+          if(ul != null){
+            swapClass(ul, "hidden", "flex");
+            swapClass(ul, "opacity-0", "opacity-100");
+          }
+          // lis?.forEach(li => {
+          //   li.addEventListener('click', () => {
+          //     if(li.parentElement?.classList.contains("opacity-100")){
+          //       swapClass((li.parentElement as HTMLElement), "hidden", "flex");
+          //       swapClass((li.parentElement as HTMLElement), "opacity-0", "opacity-100");
+          //     }
+          //   })
+          // });
         }
-        lis?.forEach(li => {
-          li.addEventListener('click', () => {
-            console.log(li.parentElement);
-            if(li.parentElement?.classList.contains("opacity-100")){
-              swapClass((li.parentElement as HTMLElement), "hidden", "flex");
-              swapClass((li.parentElement as HTMLElement), "opacity-0", "opacity-100");
-            }
-          })
-        });
       });
     }
   );

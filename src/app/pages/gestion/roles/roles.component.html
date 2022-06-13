@@ -1,0 +1,13 @@
+<div id="liste users" class="border-2 rounded-xl  mx-auto my-10 font-oswald text-xl "> 
+    <div id="title">
+        <h2 class="text-center"> Liste utilisateurs </h2>
+    </div>
+
+    <div *ngFor="let user of users" id="liste" class=" border-2 border-brown p-2 m-2 flex flex-col items-center gap-3">
+        <p>{{user.fullName}}</p>
+        <div class="flex flex-row gap-5">
+            <a class="cursor-pointer px-4 py-2 nm-convex-beige-xs hover:nm-concave-beige-sm rounded-full text-lg text-center" [routerLink]='["/philo/work"]'>Modifier</a>
+            <a class="cursor-pointer px-4 py-2 nm-convex-beige-xs hover:nm-concave-beige-sm rounded-full text-lg text-center" [routerLink]='["/philo/work"]'>Supprimer</a>
+        </div>
+    </div>
+</div>

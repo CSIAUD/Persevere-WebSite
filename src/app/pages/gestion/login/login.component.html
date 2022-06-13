@@ -1,0 +1,12 @@
+<div class="w-full h-max bg-beige p-10">
+    <form action="" class="mx-auto nm-flat-beige w-max flex flex-col gap-5 p-5 items-center rounded text-white">
+        <h2 class="text-3xl font-oswald font-thin">Connexion</h2>
+        <input class="placeholder:text-white placeholder:font-bold nm-inset-beige-sm rounded-full px-4 py-2" type="email" name="email" placeholder="Email">
+        <input class="placeholder:text-white placeholder:font-bold nm-inset-beige-sm rounded-full px-4 py-2" type="password" name="password" placeholder="Password">
+        <input class="cursor-pointer px-4 py-2 nm-convex-beige-xs hover:nm-concave-beige-sm rounded-full text-lg" type="submit" value="Connexion">
+        <p>
+            Pas encore de compte ?
+            <a [routerLink]='["/register"]' class="font-bold text-light-green text-xl" >Créer un compte</a>
+        </p>
+    </form>
+</div>
